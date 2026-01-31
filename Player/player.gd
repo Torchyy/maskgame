@@ -4,23 +4,14 @@ extends CharacterBody2D
 const SPEED = 300.0
 
 
-func _physics_process(delta: float) -> void:
-	# Add the gravity.
-	if not is_on_floor():
-		velocity += get_gravity() * delta
-
+func _physics_process(_delta: float) -> void:
 	# Handle interact
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	if Input.is_action_just_pressed("interact"):
 		pass
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
+	# Get the input direction and handle the movement
 	velocity = Input.get_vector("left", "right", "up", "down")
 	velocity.normalized()
 	velocity *= SPEED
-	#if direction.x == 0:
-		#velocity.x = direction.x * SPEED
-	#else:d
-		#velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
