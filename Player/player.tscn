@@ -5,6 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sh265"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oul6g"]
+size = Vector2(10, 10)
 
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 2
@@ -14,8 +15,11 @@ script = ExtResource("1_l8h54")
 
 [node name="Hitbox" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_sh265")
+debug_color = Color(0.915359, 0.274302, 0.241947, 0.42)
 
 [node name="Interact" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interact"]
+position = Vector2(15, 0)
 shape = SubResource("RectangleShape2D_oul6g")
+debug_color = Color(0, 0.64239, 0.318556, 0.42)
