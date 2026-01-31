@@ -3,7 +3,7 @@
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="1_1ebny"]
 [ext_resource type="Texture2D" uid="uid://b4fb8yrtobc16" path="res://levels/hub/Head_Pillars_48x24.webp" id="2_xvti3"]
 
-[node name="pedestal_room" type="Node2D"]
+[node name="pedestalRoom" type="Node2D"]
 
 [node name="Tiles" type="Node2D" parent="."]
 position = Vector2(0, -8)

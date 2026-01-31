@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://d13a8837xjqmn"]
+
+[ext_resource type="Script" uid="uid://boaax20u80k4l" path="res://Items/keypad.gd" id="1_of1yp"]
+[ext_resource type="Texture2D" uid="uid://b0bxqx22wsu5i" path="res://Items/keypad_sprite_16x16.png" id="1_r6kpw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mvc5m"]
+size = Vector2(16, 16)
+
+[node name="Keypad" type="Node2D"]
+script = ExtResource("1_of1yp")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_mvc5m")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_r6kpw")
