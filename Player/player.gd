@@ -7,11 +7,14 @@ const SPEED = 135.0
 @export var InteractArea : Area2D
 var last_dir := "down"
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	# Handle interact
-	if (Input.is_action_just_pressed("interact") && InteractArea.has_overlapping_areas()):
-		InteractArea.get_overlapping_areas()
-
+	if InteractArea.has_overlapping_areas():
+		var area := InteractArea.get_overlapping_areas()[0] as Interactable
+		# Interact with body
+		if Input.is_action_just_pressed("interact") && area:
+			area.execute()
+		
 	# Get the input direction and handle the movement
 	velocity = Input.get_vector("left", "right", "up", "down")
 	velocity.normalized()
