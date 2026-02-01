@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=4 uid="uid://4osaf3j7v8d8"]
+[gd_scene load_steps=10 format=4 uid="uid://4osaf3j7v8d8"]
 
 [ext_resource type="Script" uid="uid://bpsloev2ukxhb" path="res://levels/death/death_room.gd" id="1_qgeo1"]
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="1_w1vt1"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://jdse76o0luqg" path="res://Items/keypad.tscn" id="5_ps0s8"]
 [ext_resource type="PackedScene" uid="uid://ct7ftpqctbyix" path="res://Player/player.tscn" id="6_ps0s8"]
 [ext_resource type="PackedScene" uid="uid://c18mxp31hgxeb" path="res://levels/death/graves.tscn" id="7_r68hu"]
+[ext_resource type="PackedScene" uid="uid://du3nkmowkxe4d" path="res://Items/grave.tscn" id="8_g4wio"]
 [ext_resource type="Texture2D" uid="uid://07m8km2irvx1" path="res://textures/Mask_Case.webp" id="8_k1j3v"]
 
 [node name="DeathRoom" type="Node2D"]
@@ -62,6 +63,36 @@ position = Vector2(124, 42)
 position = Vector2(158, 103)
 
 [node name="Graves" parent="." instance=ExtResource("7_r68hu")]
+
+[node name="Grave2" parent="Graves" instance=ExtResource("8_g4wio")]
+position = Vector2(81, 145)
+
+[node name="Grave3" parent="Graves" instance=ExtResource("8_g4wio")]
+position = Vector2(74, 75)
+
+[node name="Grave4" parent="Graves" instance=ExtResource("8_g4wio")]
+position = Vector2(103, 91)
+
+[node name="Grave5" parent="Graves" instance=ExtResource("8_g4wio")]
+position = Vector2(117, 127)
+
+[node name="Grave6" parent="Graves" instance=ExtResource("8_g4wio")]
+position = Vector2(148, 143)
+
+[node name="Grave7" parent="Graves" instance=ExtResource("8_g4wio")]
+position = Vector2(180, 133)
+
+[node name="Grave8" parent="Graves" instance=ExtResource("8_g4wio")]
+position = Vector2(157, 73)
+
+[node name="Grave9" parent="Graves" instance=ExtResource("8_g4wio")]
+position = Vector2(225, 68)
+
+[node name="Grave10" parent="Graves" instance=ExtResource("8_g4wio")]
+position = Vector2(290, 136)
+
+[node name="Grave11" parent="Graves" instance=ExtResource("8_g4wio")]
+position = Vector2(150, 105)
 
 [node name="MaskCase" type="Sprite2D" parent="."]
 position = Vector2(272.5, 58.5)
