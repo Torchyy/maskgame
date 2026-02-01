@@ -12,6 +12,10 @@ func _process(delta: float) -> void:
 
 
 func _on_play_pressed() -> void:
+	$World/MainMenu.queue_free()
+	var scene := load("res://levels/level_main.tscn")
+	var instance = scene.instantiate()
+	$World.add_child(instance)
 	$AudioStreamPlayer.stop()
 
 

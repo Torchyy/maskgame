@@ -7,3 +7,6 @@ func execute() -> void:
 	PlayerStats.mask_added.emit()
 	PlayerStats.warDone = true
 	monitorable = false
+
+func get_icon() -> CompressedTexture2D:
+	return $WarMask.texture
