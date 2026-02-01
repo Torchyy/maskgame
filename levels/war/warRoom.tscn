@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=4 uid="uid://brgv4cg6oeclo"]
+[gd_scene load_steps=9 format=4 uid="uid://brgv4cg6oeclo"]
 
+[ext_resource type="Script" uid="uid://bbwduujt02j3s" path="res://levels/war/war_room.gd" id="1_pxmlp"]
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="1_ypmtf"]
 [ext_resource type="PackedScene" uid="uid://jdse76o0luqg" path="res://Items/keypad.tscn" id="2_4t7k5"]
 [ext_resource type="PackedScene" uid="uid://crq1r5md3xhb2" path="res://Items/sword_solution.tscn" id="3_8rih5"]
@@ -10,6 +11,7 @@
 
 [node name="WarRoom" type="Node2D"]
 y_sort_enabled = true
+script = ExtResource("1_pxmlp")
 
 [node name="tiles" type="Node2D" parent="."]
 position = Vector2(0, -12)
@@ -25,24 +27,23 @@ tile_set = ExtResource("1_ypmtf")
 [node name="CeilingLayer" type="TileMapLayer" parent="tiles/floorLayer/wallLayer"]
 tile_set = ExtResource("1_ypmtf")
 
-[node name="Keypad" parent="." instance=ExtResource("2_4t7k5")]
-position = Vector2(72, 44)
-
 [node name="SwordSolution" parent="." instance=ExtResource("3_8rih5")]
 position = Vector2(112, 44)
 
+[node name="Keypad" parent="." instance=ExtResource("2_4t7k5")]
+position = Vector2(70.1872, 47.9583)
+
 [node name="SwordPosters" parent="." instance=ExtResource("5_jgs7f")]
-z_index = 1
 position = Vector2(168, 44)
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(170, 120)
+z_as_relative = false
+position = Vector2(160, 120)
 scale = Vector2(2, 2)
 texture = ExtResource("8_nfxah")
 
-[node name="MaskCase" parent="Sprite2D2" instance=ExtResource("7_pxmlp")]
-position = Vector2(-5, -2)
-scale = Vector2(0.5, 0.5)
+[node name="MaskCase" parent="." instance=ExtResource("7_pxmlp")]
+position = Vector2(160, 124)
 
 [node name="Player" parent="." instance=ExtResource("7_astda")]
 z_index = 0
