@@ -1,7 +1,8 @@
-[gd_scene load_steps=23 format=3 uid="uid://ct7ftpqctbyix"]
+[gd_scene load_steps=24 format=3 uid="uid://ct7ftpqctbyix"]
 
 [ext_resource type="Script" uid="uid://61o5aieh8nms" path="res://Player/player.gd" id="1_l8h54"]
 [ext_resource type="Texture2D" uid="uid://wdugf2vvobai" path="res://Player/Character_Sprite_Sheet_224X544.png" id="2_4ntmi"]
+[ext_resource type="AudioStream" uid="uid://cwhlmht6t45b3" path="res://Player/walk-1-25588.mp3" id="3_btcbx"]
 
 [sub_resource type="Animation" id="Animation_4ntmi"]
 length = 0.001
@@ -653,3 +654,6 @@ monitorable = false
 position = Vector2(0, -6)
 shape = SubResource("RectangleShape2D_oul6g")
 debug_color = Color(0, 0.64239, 0.318556, 0.42)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_btcbx")
