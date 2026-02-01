@@ -7,10 +7,10 @@
 [ext_resource type="PackedScene" uid="uid://ct7ftpqctbyix" path="res://Player/player.tscn" id="5_chjw3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_chjw3"]
-size = Vector2(8, 16)
+size = Vector2(2, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qcedg"]
-size = Vector2(16, 8)
+size = Vector2(16, 2)
 
 [node name="LevelMain" type="Node2D" node_paths=PackedStringArray("Camera", "User")]
 y_sort_enabled = true
@@ -47,7 +47,7 @@ position = Vector2(152, 72)
 position = Vector2(24, 88)
 
 [node name="TeleportHubToWar" type="Area2D" parent="."]
-position = Vector2(316, 88)
+position = Vector2(319, 88)
 collision_layer = 0
 collision_mask = 2
 
@@ -55,7 +55,7 @@ collision_mask = 2
 shape = SubResource("RectangleShape2D_chjw3")
 
 [node name="TeleportHubToDeath" type="Area2D" parent="."]
-position = Vector2(4, 88)
+position = Vector2(1, 88)
 collision_layer = 0
 collision_mask = 2
 
@@ -63,7 +63,7 @@ collision_mask = 2
 shape = SubResource("RectangleShape2D_chjw3")
 
 [node name="TeleportHubToConquest" type="Area2D" parent="."]
-position = Vector2(152, 168)
+position = Vector2(152, 175)
 collision_layer = 0
 collision_mask = 2
 
@@ -71,7 +71,7 @@ collision_mask = 2
 shape = SubResource("RectangleShape2D_qcedg")
 
 [node name="TeleportHubToFamine" type="Area2D" parent="."]
-position = Vector2(152, 51)
+position = Vector2(152, 49)
 collision_layer = 0
 collision_mask = 2
 
@@ -79,7 +79,7 @@ collision_mask = 2
 shape = SubResource("RectangleShape2D_qcedg")
 
 [node name="TeleportWarToHub" type="Area2D" parent="."]
-position = Vector2(356, 88)
+position = Vector2(353, 88)
 collision_layer = 0
 collision_mask = 2
 
