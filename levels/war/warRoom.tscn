@@ -39,7 +39,7 @@ scale = Vector2(5, 5)
 position = Vector2(112, 40)
 
 [node name="Keypad" parent="." instance=ExtResource("2_4t7k5")]
-position = Vector2(70.1872, 43.9583)
+position = Vector2(72, 40)
 
 [node name="SwordPosters" parent="." instance=ExtResource("5_jgs7f")]
 position = Vector2(168, 40)

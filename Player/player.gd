@@ -7,6 +7,7 @@ const SPEED = 90.0
 @export var AnimPlayer : AnimationPlayer
 @export var InteractArea : Area2D
 var last_dir := "down"
+var can_move = true
 
 func _physics_process(_delta: float) -> void:
 	# Handle interact
@@ -19,12 +20,16 @@ func _physics_process(_delta: float) -> void:
 			area.execute()
 		
 	# Get the input direction and handle the movement
-	velocity = Input.get_vector("left", "right", "up", "down")
-	velocity.normalized()
-	handle_animations()
-	velocity *= SPEED
-	
-	move_and_slide()
+	if can_move:
+		velocity = Input.get_vector("left", "right", "up", "down")
+		velocity.normalized()
+		handle_animations()
+		velocity *= SPEED
+		
+		move_and_slide()
+	else:
+		AnimPlayer.play("idle_" + last_dir)
+		
 
 func handle_animations():
 	if Input.is_action_pressed("up"):
@@ -41,3 +46,7 @@ func handle_animations():
 		last_dir = "right"
 	else:
 		AnimPlayer.play("idle_" + last_dir)
+
+
+func _on_war_room_can_move_to_player(data: Variant) -> void:
+	can_move = data

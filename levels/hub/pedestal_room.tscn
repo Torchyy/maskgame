@@ -2,7 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="1_1ebny"]
 [ext_resource type="Texture2D" uid="uid://b4fb8yrtobc16" path="res://textures/Head_Pillars_48x24.webp" id="2_xvti3"]
-[ext_resource type="Script" uid="uid://noarr8kwoesf" path="res://levels/hub/pedestal.gd" id="4_fdc8u"]
+[ext_resource type="Script" path="res://levels/hub/pedestal.gd" id="4_fdc8u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fdc8u"]
 size = Vector2(92, 17)
