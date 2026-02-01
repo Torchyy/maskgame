@@ -34,17 +34,16 @@ position = Vector2(112, 44)
 position = Vector2(70.1872, 47.9583)
 
 [node name="SwordPosters" parent="." instance=ExtResource("5_jgs7f")]
-z_index = 1
 position = Vector2(168, 44)
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(170, 120)
+z_as_relative = false
+position = Vector2(160, 120)
 scale = Vector2(2, 2)
 texture = ExtResource("8_nfxah")
 
-[node name="MaskCase" parent="Sprite2D2" instance=ExtResource("7_pxmlp")]
-position = Vector2(-5, -2)
-scale = Vector2(0.5, 0.5)
+[node name="MaskCase" parent="." instance=ExtResource("7_pxmlp")]
+position = Vector2(160, 124)
 
 [node name="Player" parent="." instance=ExtResource("7_astda")]
 z_index = 0

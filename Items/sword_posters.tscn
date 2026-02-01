@@ -113,6 +113,7 @@ frame = 4
 
 [node name="Hilt5" type="Sprite2D" parent="."]
 position = Vector2(64, 10)
+scale = Vector2(1, 1)
 texture = ExtResource("3_g8rfq")
 hframes = 3
 vframes = 3
@@ -140,6 +141,7 @@ frame = 2
 
 [node name="Blade5" type="Sprite2D" parent="."]
 position = Vector2(64, -6)
+scale = Vector2(1, 1)
 texture = ExtResource("3_g8rfq")
 hframes = 3
 vframes = 3
