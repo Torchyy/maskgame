@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=4 uid="uid://dlwqsyx5p8705"]
 
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="1_wfomy"]
-[ext_resource type="PackedScene" uid="uid://biuhyqq6cpri7" path="res://Items/target.tscn" id="2_r2fdh"]
+[ext_resource type="PackedScene" uid="uid://crrc52t38a1uw" path="res://Items/target.tscn" id="2_r2fdh"]
 [ext_resource type="PackedScene" uid="uid://dhywcah30b2qf" path="res://Items/bow.tscn" id="3_2b8ee"]
 [ext_resource type="PackedScene" uid="uid://bth6xu8a8qdv8" path="res://Items/arrow.tscn" id="4_ranu8"]
 [ext_resource type="Texture2D" uid="uid://crkew8xbugu2n" path="res://textures/Conquest_Mask.webp" id="5_xuata"]

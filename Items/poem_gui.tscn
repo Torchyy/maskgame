@@ -7,7 +7,7 @@
 size = Vector2(319, 197)
 
 [sub_resource type="LabelSettings" id="LabelSettings_4l0ur"]
-font_size = 38
+font_size = 19
 
 [node name="PoemGui" type="Area2D"]
 script = ExtResource("1_aywkr")

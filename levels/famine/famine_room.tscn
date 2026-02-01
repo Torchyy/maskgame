@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=4 uid="uid://cydeqv0475mgp"]
+[gd_scene load_steps=7 format=4 uid="uid://cydeqv0475mgp"]
 
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="1_ydu8h"]
 [ext_resource type="PackedScene" uid="uid://c3gbe5uxiict" path="res://Items/scale.tscn" id="2_g8yyo"]
 [ext_resource type="PackedScene" uid="uid://c4hl8oqpbbhit" path="res://Items/raw.tscn" id="3_0wmti"]
 [ext_resource type="PackedScene" uid="uid://co0ktl1hf7l5p" path="res://Items/rock.tscn" id="4_rl86f"]
 [ext_resource type="PackedScene" uid="uid://k8qtjdxql5jk" path="res://Items/metal.tscn" id="5_rhdrk"]
+[ext_resource type="PackedScene" uid="uid://btjnwfs8ffhjt" path="res://Items/famine_mask.tscn" id="6_0wmti"]
 
 [node name="FamineRoom" type="Node2D"]
 
@@ -34,3 +35,6 @@ position = Vector2(44, 109)
 
 [node name="Metal" parent="." instance=ExtResource("5_rhdrk")]
 position = Vector2(31, 130)
+
+[node name="FamineMask" parent="." instance=ExtResource("6_0wmti")]
+position = Vector2(253, 107)
