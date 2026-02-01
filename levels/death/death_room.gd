@@ -9,7 +9,10 @@ func _ready():
 	keypad.connect("can_move", _on_can_move_update)
 	
 func _on_access_granted():
-	pass
+	if PlayerStats.deathDone:
+		return
+	$MaskCase.open_case()
+	$DeathMask.accessGranted = true
 
 func _on_can_move_update(isTrue: bool):
 	can_move_to_player.emit(isTrue)

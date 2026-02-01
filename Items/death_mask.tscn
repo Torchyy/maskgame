@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://f1rkaq1v7iir"]
 
-[ext_resource type="Script" uid="uid://dpe84p68f3yol" path="res://Items/death_mask.gd" id="1_k02tw"]
+[ext_resource type="Script" path="res://Items/death_mask.gd" id="1_k02tw"]
 [ext_resource type="Texture2D" uid="uid://56ydf8a014os" path="res://textures/Death_Mask.webp" id="2_ilomb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qxg5k"]
