@@ -5,8 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://jdse76o0luqg" path="res://Items/keypad.tscn" id="2_4t7k5"]
 [ext_resource type="PackedScene" uid="uid://crq1r5md3xhb2" path="res://Items/sword_solution.tscn" id="3_8rih5"]
 [ext_resource type="PackedScene" uid="uid://wi0nlsuyvwsy" path="res://Items/sword_posters.tscn" id="5_jgs7f"]
+[ext_resource type="PackedScene" uid="uid://bea5gluypovf" path="res://Items/war_mask.tscn" id="6_astda"]
 [ext_resource type="PackedScene" uid="uid://daqkx8rt5iob0" path="res://Items/mask_case.tscn" id="7_pxmlp"]
-[ext_resource type="Texture2D" uid="uid://b7xyjjwgmnguv" path="res://textures/War_mask.webp" id="8_nfxah"]
 
 [node name="WarRoom" type="Node2D"]
 y_sort_enabled = true
@@ -36,11 +36,10 @@ position = Vector2(70.1872, 43.9583)
 [node name="SwordPosters" parent="." instance=ExtResource("5_jgs7f")]
 position = Vector2(168, 40)
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-z_as_relative = false
-position = Vector2(184, 95)
-scale = Vector2(2, 2)
-texture = ExtResource("8_nfxah")
+[node name="WarMask" parent="." instance=ExtResource("6_astda")]
+z_index = 1
+position = Vector2(184, 99)
 
 [node name="MaskCase" parent="." instance=ExtResource("7_pxmlp")]
+z_index = 1
 position = Vector2(184, 99)

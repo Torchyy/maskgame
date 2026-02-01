@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://btjnwfs8ffhjt"]
+
+[ext_resource type="Script" uid="uid://wvp7bwt757ke" path="res://Items/famine_mask.gd" id="1_cg8wg"]
+[ext_resource type="Texture2D" uid="uid://dkgvtd1wdpcmo" path="res://textures/Famine_mask.webp" id="2_u456v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bppgr"]
+size = Vector2(26, 26)
+
+[node name="FamineMask" type="Area2D"]
+script = ExtResource("1_cg8wg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_bppgr")
+
+[node name="FamineMask" type="Sprite2D" parent="."]
+position = Vector2(-1, 0)
+scale = Vector2(1.75, 1.75)
+texture = ExtResource("2_u456v")

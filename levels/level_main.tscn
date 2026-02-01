@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=4 uid="uid://dm2odvad5tmdf"]
+[gd_scene load_steps=9 format=4 uid="uid://dm2odvad5tmdf"]
 
 [ext_resource type="Script" uid="uid://biv7ts75e3rtc" path="res://levels/level_main.gd" id="1_a51tu"]
 [ext_resource type="PackedScene" uid="uid://cwsglvnpcaiwi" path="res://levels/hub/pedestal_room.tscn" id="2_00ues"]
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="2_qcedg"]
+[ext_resource type="Script" uid="uid://k8vhc84jktyy" path="res://levels/camera_2d.gd" id="3_chjw3"]
 [ext_resource type="PackedScene" uid="uid://brgv4cg6oeclo" path="res://levels/war/warRoom.tscn" id="3_qcedg"]
 [ext_resource type="PackedScene" uid="uid://ct7ftpqctbyix" path="res://Player/player.tscn" id="5_chjw3"]
 
@@ -25,6 +26,10 @@ tile_set = ExtResource("2_qcedg")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
+script = ExtResource("3_chjw3")
+
+[node name="MaskStart" type="Marker2D" parent="Camera2D"]
+position = Vector2(12, 12)
 
 [node name="pedestalRoom" parent="." instance=ExtResource("2_00ues")]
 

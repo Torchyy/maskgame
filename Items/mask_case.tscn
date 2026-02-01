@@ -1,6 +1,5 @@
-[gd_scene load_steps=7 format=3 uid="uid://daqkx8rt5iob0"]
+[gd_scene load_steps=6 format=3 uid="uid://daqkx8rt5iob0"]
 
-[ext_resource type="Script" uid="uid://dxyjiil7arbf6" path="res://Items/mask_case.gd" id="1_ilvey"]
 [ext_resource type="Texture2D" uid="uid://07m8km2irvx1" path="res://textures/Mask_Case.webp" id="1_k7dcx"]
 [ext_resource type="Script" uid="uid://dsmacvv6vy55k" path="res://Items/mask_case_node.gd" id="1_q3bkg"]
 [ext_resource type="Texture2D" uid="uid://cyna013fym2uk" path="res://textures/Mask_Case_Open.webp" id="4_pgsv0"]
@@ -15,9 +14,8 @@ size = Vector2(30, 24)
 script = ExtResource("1_q3bkg")
 
 [node name="Area2D" type="Area2D" parent="."]
-collision_layer = 5
-collision_mask = 3
-script = ExtResource("1_ilvey")
+collision_layer = 0
+collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(-1, 0)

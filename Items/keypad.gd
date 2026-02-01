@@ -24,7 +24,7 @@ func execute() -> void:
 
 
 func _on_modal_code_entered(submitted_text: String):
-	if submitted_text == codes[current_room]:
+	if submitted_text.to_lower() == codes[current_room]:
 		access_granted.emit()
 		print("GREEN PINPAD")
 	else: 

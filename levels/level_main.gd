@@ -4,6 +4,7 @@ extends Node2D
 @export var User : Player
 
 func _ready() -> void:
+	PlayerStats.reset()
 	camera_hub()
 
 func camera_hub():
