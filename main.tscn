@@ -1,10 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://cuc478kdb3d05"]
+[gd_scene load_steps=3 format=3 uid="uid://cuc478kdb3d05"]
 
 [ext_resource type="Script" uid="uid://bbcow3qdcahgg" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://cndu2csm2vsoc" path="res://menus/main_menu.tscn" id="2_0xm2m"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_ig7tw")
 
 [node name="World" type="Node2D" parent="."]
 
+[node name="MainMenu" parent="World" instance=ExtResource("2_0xm2m")]
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="start" from="World/MainMenu" to="World/MainMenu" method="_on_start"]
