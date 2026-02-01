@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=4 uid="uid://dm2odvad5tmdf"]
+[gd_scene load_steps=14 format=4 uid="uid://dm2odvad5tmdf"]
 
 [ext_resource type="Script" uid="uid://biv7ts75e3rtc" path="res://levels/level_main.gd" id="1_a51tu"]
 [ext_resource type="PackedScene" uid="uid://cwsglvnpcaiwi" path="res://levels/hub/pedestal_room.tscn" id="2_00ues"]
+[ext_resource type="AudioStream" uid="uid://dsn77fveki2lg" path="res://music/main_theme.mp3" id="2_47e7m"]
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="2_qcedg"]
 [ext_resource type="Script" uid="uid://k8vhc84jktyy" path="res://levels/camera_2d.gd" id="3_chjw3"]
 [ext_resource type="PackedScene" uid="uid://brgv4cg6oeclo" path="res://levels/war/warRoom.tscn" id="3_qcedg"]
@@ -26,7 +27,9 @@ Camera = NodePath("Camera2D")
 User = NodePath("Player")
 Audio = NodePath("AudioStreamPlayer2D")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_47e7m")
+autoplay = true
 
 [node name="Boundaries" type="TileMapLayer" parent="."]
 visible = false
@@ -34,6 +37,7 @@ tile_map_data = PackedByteArray("AAAUAAQAAAAgAAYAAAAUAAUAAAAgAAYAAAAUAAYAAAAgAAY
 tile_set = ExtResource("2_qcedg")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+z_index = 1
 anchor_mode = 0
 script = ExtResource("3_chjw3")
 
@@ -145,6 +149,7 @@ shape = SubResource("RectangleShape2D_1vx7t")
 [node name="Player" parent="." instance=ExtResource("5_chjw3")]
 position = Vector2(88, 112)
 
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_finished"]
 [connection signal="can_move_to_player" from="WarRoom" to="Player" method="_on_war_room_can_move_to_player"]
 [connection signal="body_entered" from="TeleportHubToWar" to="." method="_teleport_hub_to_war_entered"]
 [connection signal="body_entered" from="TeleportHubToDeath" to="." method="_teleport_hub_to_death_entered"]
