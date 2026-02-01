@@ -82,6 +82,7 @@ size_flags_vertical = 8
 text = "Cancel"
 
 [node name="ConfirmButton" type="Button" parent="Modal/MarginContainer/VBoxContainer/HBoxContainer2"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
