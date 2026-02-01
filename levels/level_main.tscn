@@ -151,6 +151,9 @@ position = Vector2(88, 112)
 
 [connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_finished"]
 [connection signal="can_move_to_player" from="WarRoom" to="Player" method="_on_war_room_can_move_to_player"]
+[connection signal="can_move_to_player" from="DeathRoom" to="Player" method="_on_death_room_can_move_to_player"]
+[connection signal="can_move_to_player" from="ConquestRoom" to="." method="_on_conquest_room_can_move_to_player"]
+[connection signal="can_move_to_player" from="ConquestRoom" to="Player" method="_on_conquest_room_can_move_to_player"]
 [connection signal="body_entered" from="TeleportHubToWar" to="." method="_teleport_hub_to_war_entered"]
 [connection signal="body_entered" from="TeleportHubToDeath" to="." method="_teleport_hub_to_death_entered"]
 [connection signal="body_entered" from="TeleportDeathToHub" to="." method="teleport_death_to_hub_entered"]

@@ -37,4 +37,4 @@ position = Vector2(44, 109)
 position = Vector2(31, 130)
 
 [node name="FamineMask" parent="." instance=ExtResource("6_0wmti")]
-position = Vector2(177, 138)
+position = Vector2(110, 128)

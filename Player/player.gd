@@ -50,3 +50,11 @@ func handle_animations():
 
 func _on_war_room_can_move_to_player(data: Variant) -> void:
 	can_move = data
+
+
+func _on_death_room_can_move_to_player(data: Variant) -> void:
+	can_move = data
+
+
+func _on_conquest_room_can_move_to_player(data: Variant) -> void:
+	can_move = data
