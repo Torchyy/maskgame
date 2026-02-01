@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://biuhyqq6cpri7"]
+
+[ext_resource type="Texture2D" uid="uid://56ydf8a014os" path="res://textures/Death_Mask.webp" id="1_pyq67"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gbgn8"]
+size = Vector2(11, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_337m3"]
+size = Vector2(11, 12)
+
+[node name="target" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_gbgn8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_pyq67")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_337m3")
