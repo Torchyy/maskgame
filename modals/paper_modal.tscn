@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=3 uid="uid://bt7uign0lyivm"]
+
+[ext_resource type="Script" uid="uid://c18jrbqpwtw15" path="res://modals/paper_modal.gd" id="1_ujtwk"]
+
+[node name="PaperModal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ujtwk")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -80.0
+offset_right = 60.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect"]
+layout_mode = 0
+offset_left = 106.0
+offset_top = 3.0
+offset_right = 117.0
+offset_bottom = 14.0
+color = Color(1, 0.120522, 0.204626, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 117.0
+offset_bottom = 156.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="ColorRect"]
+z_index = -1
+layout_mode = 0
+offset_left = 108.0
+offset_top = 4.0
+offset_right = 116.0
+offset_bottom = 12.0
+
+[connection signal="pressed" from="ColorRect/Button" to="." method="_on_button_pressed"]

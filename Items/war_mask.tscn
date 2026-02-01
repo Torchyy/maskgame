@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bea5gluypovf"]
 
-[ext_resource type="Script" uid="uid://dqal71ovtaouy" path="res://Items/war_mask.gd" id="1_6qkc1"]
+[ext_resource type="Script" path="res://Items/war_mask.gd" id="1_6qkc1"]
 [ext_resource type="Texture2D" uid="uid://b7xyjjwgmnguv" path="res://textures/War_mask.webp" id="2_g4hfl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4r8bw"]

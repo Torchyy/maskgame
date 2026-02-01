@@ -2,6 +2,7 @@ class_name Keypad
 extends Interactable
 
 signal access_granted
+signal can_move(isTrue)
 
 @onready var input_modal: InputModal = $InputModal
 
@@ -21,10 +22,12 @@ func execute() -> void:
 	input_modal.show()
 	input_modal.on_display()
 	
+	can_move.emit(false)
 	print("OPEN MODAL")
 
 
 func _on_modal_code_entered(submitted_text: String):
+	can_move.emit(true)
 	if submitted_text.to_lower() == codes[current_room]:
 		access_granted.emit()
 		print("GREEN PINPAD")
