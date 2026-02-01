@@ -1,6 +1,8 @@
 class_name Interactable
 extends Area2D
 
+var isHoldable := false
+
 func execute() -> void:
 	print(
 			"Interacting with ", self,
