@@ -5,9 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://hxfj8odl7exn" path="res://Items/paper_tree.tscn" id="2_7x0bf"]
 [ext_resource type="Texture2D" uid="uid://c8ajevvn6vxnl" path="res://textures/deco-tree.png" id="3_7x0bf"]
 [ext_resource type="PackedScene" uid="uid://jdse76o0luqg" path="res://Items/keypad.tscn" id="5_ps0s8"]
-[ext_resource type="PackedScene" uid="uid://f1rkaq1v7iir" path="res://Items/death_mask.tscn" id="6_oodx8"]
-[ext_resource type="PackedScene" uid="uid://c18mxp31hgxeb" path="res://levels/death/graves.tscn" id="7_r68hu"]
-[ext_resource type="PackedScene" uid="uid://du3nkmowkxe4d" path="res://Items/grave.tscn" id="8_g4wio"]
+[ext_resource type="PackedScene" path="res://Items/death_mask.tscn" id="6_oodx8"]
+[ext_resource type="PackedScene" path="res://levels/death/graves.tscn" id="7_r68hu"]
+[ext_resource type="PackedScene" path="res://Items/grave.tscn" id="8_g4wio"]
 [ext_resource type="PackedScene" uid="uid://daqkx8rt5iob0" path="res://Items/mask_case.tscn" id="9_g4wio"]
 [ext_resource type="PackedScene" uid="uid://bt7uign0lyivm" path="res://modals/paper_modal.tscn" id="10_oodx8"]
 

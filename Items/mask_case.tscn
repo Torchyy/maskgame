@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://daqkx8rt5iob0"]
+[gd_scene load_steps=7 format=3 uid="uid://daqkx8rt5iob0"]
 
 [ext_resource type="Texture2D" uid="uid://07m8km2irvx1" path="res://textures/Mask_Case.webp" id="1_k7dcx"]
 [ext_resource type="Script" uid="uid://dsmacvv6vy55k" path="res://Items/mask_case_node.gd" id="1_q3bkg"]
 [ext_resource type="Texture2D" uid="uid://cyna013fym2uk" path="res://textures/Mask_Case_Open.webp" id="4_pgsv0"]
+[ext_resource type="AudioStream" uid="uid://bwrolt7p13104" path="res://Items/glass-breaking-sound-effect-240679.mp3" id="4_q3bkg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ilvey"]
 size = Vector2(30, 64)
@@ -35,3 +36,6 @@ shape = SubResource("RectangleShape2D_cxgdq")
 visible = false
 scale = Vector2(2, 2)
 texture = ExtResource("4_pgsv0")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_q3bkg")

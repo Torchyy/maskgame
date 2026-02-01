@@ -1,8 +1,8 @@
-[gd_scene load_steps=13 format=4 uid="uid://dlwqsyx5p8705"]
+[gd_scene load_steps=14 format=4 uid="uid://dlwqsyx5p8705"]
 
-[ext_resource type="Script" uid="uid://d2kwbsu5qmee3" path="res://levels/conquest/conquest_room.gd" id="1_2b8ee"]
+[ext_resource type="Script" path="res://levels/conquest/conquest_room.gd" id="1_2b8ee"]
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="1_wfomy"]
-[ext_resource type="PackedScene" uid="uid://crrc52t38a1uw" path="res://Items/target.tscn" id="2_r2fdh"]
+[ext_resource type="PackedScene" uid="uid://biuhyqq6cpri7" path="res://Items/target.tscn" id="2_r2fdh"]
 [ext_resource type="PackedScene" uid="uid://dhywcah30b2qf" path="res://Items/bow.tscn" id="3_2b8ee"]
 [ext_resource type="PackedScene" uid="uid://bth6xu8a8qdv8" path="res://Items/arrow.tscn" id="4_ranu8"]
 [ext_resource type="PackedScene" uid="uid://daqkx8rt5iob0" path="res://Items/mask_case.tscn" id="6_2yig4"]
@@ -12,6 +12,9 @@
 [ext_resource type="Texture2D" uid="uid://w4breqvhpvge" path="res://textures/3_notches_lodged_arrow_32x32.png" id="10_c7p2f"]
 [ext_resource type="Texture2D" uid="uid://cj71lm7btsrx2" path="res://textures/1_notch_lodged_arrow.png" id="11_idudy"]
 [ext_resource type="Texture2D" uid="uid://bx0yu3bqb5l4b" path="res://textures/4_notches_lodged_arrow_32x32.png" id="12_k6kkv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n7fwv"]
+size = Vector2(5, 17)
 
 [node name="ConquestRoom" type="Node2D"]
 script = ExtResource("1_2b8ee")
@@ -75,14 +78,38 @@ position = Vector2(36, 44)
 position = Vector2(83, 60)
 texture = ExtResource("9_n7fwv")
 
+[node name="StaticBody2D" type="StaticBody2D" parent="2NotchesLodgedArrow"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="2NotchesLodgedArrow/StaticBody2D"]
+position = Vector2(-0.5, -1.5)
+shape = SubResource("RectangleShape2D_n7fwv")
+
 [node name="3NotchesLodgedArrow32x32" type="Sprite2D" parent="."]
 position = Vector2(127, 59)
 texture = ExtResource("10_c7p2f")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="3NotchesLodgedArrow32x32"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="3NotchesLodgedArrow32x32/StaticBody2D"]
+position = Vector2(-0.5, -1.5)
+shape = SubResource("RectangleShape2D_n7fwv")
 
 [node name="1NotchLodgedArrow" type="Sprite2D" parent="."]
 position = Vector2(171, 60)
 texture = ExtResource("11_idudy")
 
+[node name="StaticBody2D" type="StaticBody2D" parent="1NotchLodgedArrow"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="1NotchLodgedArrow/StaticBody2D"]
+position = Vector2(-0.5, -1.5)
+shape = SubResource("RectangleShape2D_n7fwv")
+
 [node name="4NotchesLodgedArrow32x32" type="Sprite2D" parent="."]
 position = Vector2(217, 59)
 texture = ExtResource("12_k6kkv")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="4NotchesLodgedArrow32x32"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="4NotchesLodgedArrow32x32/StaticBody2D"]
+position = Vector2(-0.5, -1.5)
+shape = SubResource("RectangleShape2D_n7fwv")
