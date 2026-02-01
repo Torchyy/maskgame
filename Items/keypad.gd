@@ -3,9 +3,9 @@ extends Interactable
 
 signal access_granted
 
-var current_room = "war"
-
 @onready var input_modal: InputModal = $InputModal
+
+var current_room: String = ""
 
 var codes = {
 	"conquest": "2310",
