@@ -25,12 +25,8 @@ func execute() -> void:
 
 func _on_modal_code_entered(submitted_text: String):
 	if submitted_text == codes[current_room]:
-		print("MODAL EXITED")
-		
-		print("GLASS BROKEN")
 		access_granted.emit()
 		print("GREEN PINPAD")
 	else: 
-		print("MODAL EXITED")
 		print("RED PINPAD 3sec")
 	

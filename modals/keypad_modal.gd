@@ -8,7 +8,6 @@ func _ready() -> void:
 	line_edit.text_submitted.connect(_on_LineEdit_text_entered)
 
 func _on_LineEdit_text_entered(new_text: String) -> void:
-	print(new_text)
 	code_entered.emit(new_text)
 	line_edit.clear()
 	hide()
