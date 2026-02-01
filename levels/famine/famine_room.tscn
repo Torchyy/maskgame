@@ -23,7 +23,7 @@ tile_map_data = PackedByteArray("AAAAAAAABAAMAAQAAAATAAAABAALAAQAAAABAAAABAANAAI
 tile_set = ExtResource("1_ydu8h")
 
 [node name="Scale" parent="." instance=ExtResource("2_g8yyo")]
-position = Vector2(152, 102)
+position = Vector2(246, 111)
 scale = Vector2(1.5, 1.5)
 
 [node name="Meat" parent="." instance=ExtResource("3_0wmti")]
