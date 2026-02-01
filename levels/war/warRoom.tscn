@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=4 uid="uid://brgv4cg6oeclo"]
+[gd_scene load_steps=9 format=4 uid="uid://brgv4cg6oeclo"]
 
+[ext_resource type="Script" uid="uid://bbwduujt02j3s" path="res://levels/war/war_room.gd" id="1_pxmlp"]
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="1_ypmtf"]
 [ext_resource type="PackedScene" uid="uid://jdse76o0luqg" path="res://Items/keypad.tscn" id="2_4t7k5"]
 [ext_resource type="PackedScene" uid="uid://crq1r5md3xhb2" path="res://Items/sword_solution.tscn" id="3_8rih5"]
@@ -9,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://b7xyjjwgmnguv" path="res://textures/War_mask.webp" id="8_nfxah"]
 
 [node name="WarRoom" type="Node2D"]
+script = ExtResource("1_pxmlp")
 
 [node name="tiles" type="Node2D" parent="."]
 position = Vector2(0, -8)
