@@ -20,14 +20,16 @@ func _teleport_war_to_hub_entered(body: Node2D) -> void:
 	camera_hub()
 	User.global_position.x = $MarkerWarToHub.global_position.x
 
-
 func _teleport_hub_to_death_entered(body: Node2D) -> void:
 	pass # Replace with function body.
 
-
-func teleport_hub_to_conquest_entered(body: Node2D) -> void:
-	pass # Replace with function body.
-
-
 func teleport_hub_to_famine_entered(body: Node2D) -> void:
 	pass # Replace with function body.
+
+func teleport_hub_to_conquest_entered(body: Node2D) -> void:
+	Camera.global_position = $ConquestRoom.global_position
+	User.global_position.y = $MarkerConquest.global_position.y
+
+func _teleport_conquest_to_hub_entered(body: Node2D) -> void:
+	camera_hub()
+	User.global_position.y = $MarkerConquestToHub.global_position.y

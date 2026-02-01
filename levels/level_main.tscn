@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=4 uid="uid://dm2odvad5tmdf"]
+[gd_scene load_steps=11 format=4 uid="uid://dm2odvad5tmdf"]
 
 [ext_resource type="Script" uid="uid://biv7ts75e3rtc" path="res://levels/level_main.gd" id="1_a51tu"]
 [ext_resource type="PackedScene" uid="uid://cwsglvnpcaiwi" path="res://levels/hub/pedestal_room.tscn" id="2_00ues"]
@@ -6,11 +6,15 @@
 [ext_resource type="Script" path="res://levels/camera_2d.gd" id="3_chjw3"]
 [ext_resource type="PackedScene" uid="uid://brgv4cg6oeclo" path="res://levels/war/warRoom.tscn" id="3_qcedg"]
 [ext_resource type="PackedScene" uid="uid://ct7ftpqctbyix" path="res://Player/player.tscn" id="5_chjw3"]
+[ext_resource type="PackedScene" uid="uid://dlwqsyx5p8705" path="res://levels/conquest/conquest_room.tscn" id="6_6vc24"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_chjw3"]
 size = Vector2(2, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qcedg"]
+size = Vector2(16, 2)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vx7t"]
 size = Vector2(16, 2)
 
 [node name="LevelMain" type="Node2D" node_paths=PackedStringArray("Camera", "User")]
@@ -36,17 +40,23 @@ position = Vector2(12, 12)
 [node name="WarRoom" parent="." instance=ExtResource("3_qcedg")]
 position = Vector2(352, 0)
 
+[node name="ConquestRoom" parent="." instance=ExtResource("6_6vc24")]
+position = Vector2(-16, -254)
+
 [node name="MarkerWar" type="Marker2D" parent="."]
 position = Vector2(376, 88)
 
 [node name="MarkerWarToHub" type="Marker2D" parent="."]
 position = Vector2(296, 88)
 
+[node name="MarkerConquest" type="Marker2D" parent="."]
+position = Vector2(152, -103)
+
 [node name="MarkerConquestToHub" type="Marker2D" parent="."]
-position = Vector2(153, 152)
+position = Vector2(152, 67)
 
 [node name="MarkerFamineToHub" type="Marker2D" parent="."]
-position = Vector2(152, 72)
+position = Vector2(152, 153)
 
 [node name="MarkerDeathToHub" type="Marker2D" parent="."]
 position = Vector2(24, 88)
@@ -68,7 +78,7 @@ collision_mask = 2
 shape = SubResource("RectangleShape2D_chjw3")
 
 [node name="TeleportHubToConquest" type="Area2D" parent="."]
-position = Vector2(152, 175)
+position = Vector2(152, 49)
 collision_layer = 0
 collision_mask = 2
 
@@ -76,7 +86,7 @@ collision_mask = 2
 shape = SubResource("RectangleShape2D_qcedg")
 
 [node name="TeleportHubToFamine" type="Area2D" parent="."]
-position = Vector2(152, 49)
+position = Vector2(152, 171)
 collision_layer = 0
 collision_mask = 2
 
@@ -91,6 +101,14 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TeleportWarToHub"]
 shape = SubResource("RectangleShape2D_chjw3")
 
+[node name="TeleportConquestToHub" type="Area2D" parent="."]
+position = Vector2(152, -76)
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TeleportConquestToHub"]
+shape = SubResource("RectangleShape2D_1vx7t")
+
 [node name="Player" parent="." instance=ExtResource("5_chjw3")]
 position = Vector2(88, 112)
 
@@ -100,3 +118,4 @@ position = Vector2(88, 112)
 [connection signal="body_entered" from="TeleportHubToConquest" to="." method="teleport_hub_to_conquest_entered"]
 [connection signal="body_entered" from="TeleportHubToFamine" to="." method="teleport_hub_to_famine_entered"]
 [connection signal="body_entered" from="TeleportWarToHub" to="." method="_teleport_war_to_hub_entered"]
+[connection signal="body_entered" from="TeleportConquestToHub" to="." method="_teleport_conquest_to_hub_entered"]
