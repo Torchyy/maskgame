@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://b3f8rgu7oremc"]
+
+[ext_resource type="Texture2D" uid="uid://bkaf3352r3wpq" path="res://textures/cooked_meat.png" id="1_txe0t"]
+[ext_resource type="Script" uid="uid://70h580gvmi7g" path="res://Items/cooked.gd" id="1_ux6sl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ux6sl"]
+size = Vector2(14, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ir7xk"]
+size = Vector2(14, 12)
+
+[node name="Cooked" type="Area2D"]
+script = ExtResource("1_ux6sl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_ux6sl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_txe0t")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_ir7xk")

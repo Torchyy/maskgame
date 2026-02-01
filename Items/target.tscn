@@ -1,13 +1,13 @@
 [gd_scene load_steps=5 format=3 uid="uid://crrc52t38a1uw"]
 
 [ext_resource type="Script" uid="uid://c1hbn3i8n8hay" path="res://Items/target.gd" id="1_gbgn8"]
-[ext_resource type="Texture2D" uid="uid://56ydf8a014os" path="res://textures/Death_Mask.webp" id="1_pyq67"]
+[ext_resource type="Texture2D" uid="uid://vilke6q4rcji" path="res://textures/target.png" id="2_gbgn8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gbgn8"]
-size = Vector2(11, 12)
+size = Vector2(16, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_337m3"]
-size = Vector2(11, 12)
+size = Vector2(16, 16)
 
 [node name="target" type="Area2D"]
 collision_layer = 4
@@ -15,15 +15,13 @@ collision_mask = 0
 script = ExtResource("1_gbgn8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_gbgn8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_pyq67")
+texture = ExtResource("2_gbgn8")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
-position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_337m3")
