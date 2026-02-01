@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://buspg8nswbhrn"]
+[gd_scene load_steps=0 format=3 uid="uid://buspg8nswbhrn"]
 
 [node name="Shovel" type="Area2D"]
 
