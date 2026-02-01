@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://tum6fdhen3k0"]
+
+[ext_resource type="Texture2D" uid="uid://c8ajevvn6vxnl" path="res://textures/deco-tree.png" id="1_4wvwu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y0toc"]
+size = Vector2(12, 29)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 12.5)
+shape = SubResource("RectangleShape2D_y0toc")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+position = Vector2(3, -12.5)
+texture = ExtResource("1_4wvwu")

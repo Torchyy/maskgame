@@ -1,8 +1,8 @@
 [gd_resource type="TileSet" load_steps=7 format=3 uid="uid://0g7pxawmxdv4"]
 
 [ext_resource type="Texture2D" uid="uid://cuabvpmvhqsfv" path="res://textures/Room_Builder_free_32x32.webp" id="1_uhkwg"]
-[ext_resource type="Texture2D" uid="uid://cxvokuwi5n0rf" path="res://textures/Modern_Interiors_Free_v2.2/Modern tiles_Free/free_overview.png" id="2_uhkwg"]
-[ext_resource type="Texture2D" uid="uid://ue4qkurxqrhi" path="res://textures/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/32x32/Room_Builder_free_32x32.png" id="3_4q6ot"]
+[ext_resource type="Texture2D" uid="uid://ue4qkurxqrhi" path="res://textures/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/32x32/Room_Builder_free_32x32.png" id="2_uhkwg"]
+[ext_resource type="Texture2D" uid="uid://cxvokuwi5n0rf" path="res://textures/Modern_Interiors_Free_v2.2/Modern tiles_Free/free_overview.png" id="3_4q6ot"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8smd0"]
 texture = ExtResource("1_uhkwg")
@@ -1039,7 +1039,7 @@ use_texture_padding = false
 13:24/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uhkwg"]
-texture = ExtResource("3_4q6ot")
+texture = ExtResource("2_uhkwg")
 11:0/0 = 0
 11:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 12:0/0 = 0
@@ -2133,9 +2133,19 @@ texture = ExtResource("3_4q6ot")
 17:41/0 = 0
 18:41/0 = 0
 19:41/0 = 0
+22:31/0 = 0
+23:31/0 = 0
+24:31/0 = 0
+24:32/0 = 0
+23:32/0 = 0
+22:32/0 = 0
+22:33/0 = 0
+23:33/0 = 0
+24:33/0 = 0
+25:32/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4q6ot"]
-texture = ExtResource("2_uhkwg")
+texture = ExtResource("3_4q6ot")
 46:0/0 = 0
 47:0/0 = 0
 48:0/0 = 0
