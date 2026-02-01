@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://dhywcah30b2qf"]
+
+[ext_resource type="Script" uid="uid://bpinkyhh0ioen" path="res://Items/bow.gd" id="1_np8hv"]
+[ext_resource type="Texture2D" uid="uid://ckvd0k4avvwdi" path="res://textures/empty_bow.png" id="2_32n02"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2dqvc"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cqe1b"]
+size = Vector2(16, 16)
+
+[node name="Bow" type="Area2D"]
+script = ExtResource("1_np8hv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -1)
+shape = SubResource("RectangleShape2D_2dqvc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_32n02")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
+position = Vector2(-1, -1)
+shape = SubResource("RectangleShape2D_cqe1b")

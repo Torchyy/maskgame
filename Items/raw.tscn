@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://c4hl8oqpbbhit"]
+
+[ext_resource type="Script" uid="uid://c0skfxuye8f35" path="res://Items/raw.gd" id="1_dqg14"]
+[ext_resource type="Texture2D" uid="uid://c75kcm47n18su" path="res://textures/raw_meat.png" id="1_ljn60"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5xbfd"]
+size = Vector2(14, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ocq1"]
+size = Vector2(14, 12)
+
+[node name="Raw" type="Area2D"]
+script = ExtResource("1_dqg14")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_5xbfd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ljn60")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_7ocq1")
