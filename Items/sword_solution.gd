@@ -6,3 +6,7 @@ extends Interactable
 func execute():
 	sword_solution_gui.show()
 	
+
+
+func _on_button_pressed() -> void:
+	hide()

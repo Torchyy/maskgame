@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://4osaf3j7v8d8"]
+[gd_scene load_steps=11 format=4 uid="uid://4osaf3j7v8d8"]
 
 [ext_resource type="Script" uid="uid://bpsloev2ukxhb" path="res://levels/death/death_room.gd" id="1_qgeo1"]
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="1_w1vt1"]
@@ -6,9 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://c8ajevvn6vxnl" path="res://textures/deco-tree.png" id="3_7x0bf"]
 [ext_resource type="PackedScene" uid="uid://jdse76o0luqg" path="res://Items/keypad.tscn" id="5_ps0s8"]
 [ext_resource type="PackedScene" uid="uid://ct7ftpqctbyix" path="res://Player/player.tscn" id="6_ps0s8"]
-[ext_resource type="PackedScene" uid="uid://f1rkaq1v7iir" path="res://Items/death_mask.tscn" id="7_eicp2"]
-[ext_resource type="PackedScene" uid="uid://c18mxp31hgxeb" path="res://levels/death/graves.tscn" id="7_r68hu"]
-[ext_resource type="PackedScene" uid="uid://du3nkmowkxe4d" path="res://Items/grave.tscn" id="8_g4wio"]
+[ext_resource type="PackedScene" path="res://levels/death/graves.tscn" id="7_r68hu"]
+[ext_resource type="PackedScene" path="res://Items/grave.tscn" id="8_g4wio"]
 [ext_resource type="PackedScene" uid="uid://daqkx8rt5iob0" path="res://Items/mask_case.tscn" id="9_g4wio"]
 [ext_resource type="PackedScene" uid="uid://bt7uign0lyivm" path="res://modals/paper_modal.tscn" id="10_oodx8"]
 
@@ -66,9 +65,6 @@ position = Vector2(290, 136)
 
 [node name="Grave11" parent="Graves" instance=ExtResource("8_g4wio")]
 position = Vector2(150, 105)
-
-[node name="DeathMask" parent="." instance=ExtResource("7_eicp2")]
-position = Vector2(282.13, 57.82)
 
 [node name="MaskCase" parent="." instance=ExtResource("9_g4wio")]
 position = Vector2(284, 55)

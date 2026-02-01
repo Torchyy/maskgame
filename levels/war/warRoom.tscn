@@ -53,6 +53,7 @@ z_index = 1
 position = Vector2(184, 99)
 
 [node name="SwordHints" parent="." instance=ExtResource("9_drffs")]
+visible = false
 z_index = 3
 position = Vector2(159, 86)
 scale = Vector2(2.5, 2.5)

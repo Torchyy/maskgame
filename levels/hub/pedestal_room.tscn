@@ -1,14 +1,19 @@
-[gd_scene load_steps=6 format=4 uid="uid://cwsglvnpcaiwi"]
+[gd_scene load_steps=9 format=4 uid="uid://cwsglvnpcaiwi"]
 
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="1_1ebny"]
 [ext_resource type="Texture2D" uid="uid://b4fb8yrtobc16" path="res://textures/Head_Pillars_48x24.webp" id="2_xvti3"]
-[ext_resource type="Script" path="res://levels/hub/pedestal.gd" id="4_fdc8u"]
+[ext_resource type="PackedScene" uid="uid://cthv6jhgwa5km" path="res://Items/poem_gui.tscn" id="4_dyuoi"]
+[ext_resource type="Script" uid="uid://noarr8kwoesf" path="res://levels/hub/pedestal.gd" id="4_fdc8u"]
+[ext_resource type="PackedScene" uid="uid://j17h1ouqx4i6" path="res://Items/board.tscn" id="5_dyuoi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fdc8u"]
 size = Vector2(92, 17)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dyuoi"]
 size = Vector2(92, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hbxay"]
+size = Vector2(82, 52)
 
 [node name="pedestalRoom" type="Node2D"]
 y_sort_enabled = true
@@ -52,3 +57,20 @@ collision_mask = 3
 [node name="CollisionShape2D" type="CollisionShape2D" parent="pedestal/StaticBody2D"]
 position = Vector2(0, 18)
 shape = SubResource("RectangleShape2D_dyuoi")
+
+[node name="Board" parent="pedestal" instance=ExtResource("5_dyuoi")]
+z_index = -1
+position = Vector2(-70, -64)
+scale = Vector2(0.5, 0.5)
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="pedestal/Board"]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_hbxay")
+
+[node name="PoemGui" parent="pedestal" instance=ExtResource("4_dyuoi")]
+visible = false
+z_index = 2
+position = Vector2(14, -15)
+scale = Vector2(0.8, 0.8)
