@@ -11,5 +11,3 @@ script = ExtResource("1_ig7tw")
 [node name="MainMenu" parent="World" instance=ExtResource("2_0xm2m")]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-
-[connection signal="start" from="World/MainMenu" to="World/MainMenu" method="_on_start"]

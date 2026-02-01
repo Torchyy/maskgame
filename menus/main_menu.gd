@@ -1,5 +1,4 @@
 extends Node2D
-signal start
 
-func _on_start() -> void:
-	pass
+func _on_play_pressed() -> void:
+	get_tree().change_scene_to_file("res://levels/hub/pedestal_room.tscn")
