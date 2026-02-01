@@ -11,7 +11,6 @@ var codes = {
 
 func execute() -> void:
 	print("OPEN MODAL")
-	pass
 
 
 func check_input(input):

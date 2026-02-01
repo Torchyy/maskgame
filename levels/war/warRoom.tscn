@@ -1,11 +1,9 @@
-[gd_scene load_steps=9 format=4 uid="uid://brgv4cg6oeclo"]
+[gd_scene load_steps=7 format=4 uid="uid://brgv4cg6oeclo"]
 
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="1_ypmtf"]
-[ext_resource type="PackedScene" uid="uid://d13a8837xjqmn" path="res://Items/keypad.tscn" id="2_4t7k5"]
+[ext_resource type="PackedScene" uid="uid://jdse76o0luqg" path="res://Items/keypad.tscn" id="2_4t7k5"]
 [ext_resource type="PackedScene" uid="uid://crq1r5md3xhb2" path="res://Items/sword_solution.tscn" id="3_8rih5"]
-[ext_resource type="Script" uid="uid://dplj1pbt7t5jb" path="res://Items/sword_solution.gd" id="4_4dqhd"]
 [ext_resource type="PackedScene" uid="uid://wi0nlsuyvwsy" path="res://Items/sword_posters.tscn" id="5_jgs7f"]
-[ext_resource type="Texture2D" uid="uid://c0ccg5tvmfxum" path="res://textures/Sword_sheet_48x48_16x16_each.webp" id="6_astda"]
 [ext_resource type="PackedScene" uid="uid://daqkx8rt5iob0" path="res://Items/mask_case.tscn" id="7_pxmlp"]
 [ext_resource type="Texture2D" uid="uid://b7xyjjwgmnguv" path="res://textures/War_mask.webp" id="8_nfxah"]
 
@@ -19,7 +17,7 @@ tile_map_data = PackedByteArray("AAADAAUAAAAXAAoAAAADAAYAAAAXAAsAAAADAAcAAAAXAAo
 tile_set = ExtResource("1_ypmtf")
 
 [node name="wallLayer" type="TileMapLayer" parent="tiles/floorLayer"]
-tile_map_data = PackedByteArray("AAACAAEAAAAMAAQAAAACAAIAAAAMAAUAAAACAAMAAAAMAAUAAAACAAQABAAOAAgAAAADAAEAAAAKAAQAAAADAAIAAAABABsAAAADAAMAAAABABwAAAADAAQAAAABAB0AAAAEAAEAAAAKAAQAAAAEAAIAAAACABsAAAAEAAMAAAACABwAAAAEAAQAAAACAB0AAAAFAAEAAAAKAAQAAAAFAAIAAAADABsAAAAFAAMAAAADABwAAAAFAAQAAAADAB0AAAAGAAEAAAAKAAQAAAAGAAIAAAAEABsAAAAGAAMAAAAEABwAAAAGAAQAAAAEAB0AAAANAAEAAAAKAAQAAAANAAIAAAABABsAAAANAAMAAAABABwAAAANAAQAAAABAB0AAAAOAAEAAAAKAAQAAAAOAAIAAAACABsAAAAOAAMAAAACABwAAAAOAAQAAAACAB0AAAAPAAEAAAAKAAQAAAAPAAIAAAADABsAAAAPAAMAAAADABwAAAAPAAQAAAADAB0AAAAQAAEAAAAKAAQAAAAQAAIAAAAEABsAAAAQAAMAAAAEABwAAAAQAAQAAAAEAB0AAAARAAEAAAALAAQAAAARAAIAAAALAAUAAAARAAMAAAALAAUAAAARAAQAAAALAAUAAAAHAAEAAAAKAAQAAAAHAAIAAAABABsAAAAHAAMAAAABABwAAAAHAAQAAAABAB0AAAAIAAEAAAAKAAQAAAAIAAIAAAACABsAAAAIAAMAAAACABwAAAAIAAQAAAACAB0AAAAJAAEAAAAKAAQAAAAJAAIAAAABABsAAAAJAAMAAAABABwAAAAJAAQAAAABAB0AAAAKAAEAAAAKAAQAAAAKAAIAAAACABsAAAAKAAMAAAACABwAAAAKAAQAAAACAB0AAAALAAEAAAAKAAQAAAALAAIAAAADABsAAAALAAMAAAADABwAAAALAAQAAAADAB0AAAAMAAEAAAAKAAQAAAAMAAIAAAAEABsAAAAMAAMAAAAEABwAAAAMAAQAAAAEAB0AAAARAAUAAAALAAUAAAARAAYAAAALAAUAAAARAAcAAAALAAUAAAARAAgAAAALAAUAAAARAAkAAAALAAUAAAARAAoAAAALAAUAAAACAAgABAAOAAgAAAACAAkAAAAMAAUAAAACAAoAAAAMAAUAAAARAAsAAAALAAIAAAACAAsAAAAMAAIAAAADAAsAAAANAAIAAAAEAAsAAAANAAIAAAAFAAsAAAANAAIAAAAGAAsAAAANAAIAAAAHAAsAAAANAAIAAAAIAAsAAAANAAIAAAAJAAsAAAANAAIAAAAKAAsAAAANAAIAAAALAAsAAAANAAIAAAAMAAsAAAANAAIAAAANAAsAAAANAAIAAAAOAAsAAAANAAIAAAAPAAsAAAANAAIAAAAQAAsAAAANAAIAAAACAAUABAARAAgAADA=")
+tile_map_data = PackedByteArray("AAACAAEAAAAMAAQAAAACAAIAAAAMAAUAAAACAAMAAAAMAAUAAAACAAQABAAOAAgAAAADAAEAAAAKAAQAAAADAAIAAAABABsAAAADAAMAAAABABwAAAADAAQAAAABAB0AAAAEAAEAAAAKAAQAAAAEAAIAAAACABsAAAAEAAMAAAACABwAAAAEAAQAAAACAB0AAAAFAAEAAAAKAAQAAAAFAAIAAAADABsAAAAFAAMAAAADABwAAAAFAAQAAAADAB0AAAAGAAEAAAAKAAQAAAAGAAIAAAAEABsAAAAGAAMAAAAEABwAAAAGAAQAAAAEAB0AAAANAAEAAAAKAAQAAAANAAIAAAABABsAAAANAAMAAAABABwAAAANAAQAAAABAB0AAAAOAAEAAAAKAAQAAAAOAAIAAAACABsAAAAOAAMAAAACABwAAAAOAAQAAAACAB0AAAAPAAEAAAAKAAQAAAAPAAIAAAADABsAAAAPAAMAAAADABwAAAAPAAQAAAADAB0AAAAQAAEAAAAKAAQAAAAQAAIAAAAEABsAAAAQAAMAAAAEABwAAAAQAAQAAAAEAB0AAAARAAEAAAALAAQAAAARAAIAAAALAAUAAAARAAMAAAALAAUAAAARAAQAAAALAAUAAAAHAAEAAAAKAAQAAAAHAAIAAAABABsAAAAHAAMAAAABABwAAAAHAAQAAAABAB0AAAAIAAEAAAAKAAQAAAAIAAIAAAACABsAAAAIAAMAAAACABwAAAAIAAQAAAACAB0AAAAJAAEAAAAKAAQAAAAJAAIAAAABABsAAAAJAAMAAAABABwAAAAJAAQAAAABAB0AAAAKAAEAAAAKAAQAAAAKAAIAAAACABsAAAAKAAMAAAACABwAAAAKAAQAAAACAB0AAAALAAEAAAAKAAQAAAALAAIAAAADABsAAAALAAMAAAADABwAAAALAAQAAAADAB0AAAAMAAEAAAAKAAQAAAAMAAIAAAAEABsAAAAMAAMAAAAEABwAAAAMAAQAAAAEAB0AAAARAAUAAAALAAUAAAARAAYAAAALAAUAAAARAAcAAAALAAUAAAARAAgAAAALAAUAAAARAAkAAAALAAUAAAARAAoAAAALAAUAAAACAAgABAAOAAgAAAACAAkAAAAMAAUAAAACAAoAAAAMAAUAAAARAAsAAAALAAIAAAACAAsAAAAMAAIAAAADAAsAAAANAAIAAAAEAAsAAAANAAIAAAAFAAsAAAANAAIAAAAGAAsAAAANAAIAAAAHAAsAAAANAAIAAAAIAAsAAAANAAIAAAAJAAsAAAANAAIAAAAKAAsAAAANAAIAAAALAAsAAAANAAIAAAAMAAsAAAANAAIAAAANAAsAAAANAAIAAAAOAAsAAAANAAIAAAAPAAsAAAANAAIAAAAQAAsAAAANAAIAAAACAAUABAARAAgAADAJAAcABAAWAAoAAAAKAAcABAAWAAoAAAAKAAgABAAWAAoAAAAJAAgABAAWAAoAAAAJAAkABAAWAAoAAAAKAAkABAAWAAoAAAAJAAYABAAWAAoAAAAKAAYABAAWAAoAAAA=")
 tile_set = ExtResource("1_ypmtf")
 
 [node name="Keypad" parent="." instance=ExtResource("2_4t7k5")]
@@ -27,142 +25,14 @@ position = Vector2(72, 48)
 
 [node name="SwordSolution" parent="." instance=ExtResource("3_8rih5")]
 position = Vector2(112, 48)
-script = ExtResource("4_4dqhd")
-
-[node name="Blade2" type="Sprite2D" parent="SwordSolution"]
-position = Vector2(6.00002, 1.90735e-05)
-rotation = 1.57079
-texture = ExtResource("6_astda")
-hframes = 3
-vframes = 3
-frame = 1
-
-[node name="Handle3" type="Sprite2D" parent="SwordSolution"]
-position = Vector2(-9.99998, 1.90735e-05)
-rotation = 1.57079
-texture = ExtResource("6_astda")
-hframes = 3
-vframes = 3
-frame = 5
-
-[node name="Effect2" type="Sprite2D" parent="SwordSolution"]
-position = Vector2(6.00002, 1.90735e-05)
-rotation = 1.57079
-texture = ExtResource("6_astda")
-hframes = 3
-vframes = 3
-frame = 7
 
 [node name="SwordPosters" parent="." instance=ExtResource("5_jgs7f")]
 position = Vector2(168, 48)
 
-[node name="Blade1" type="Sprite2D" parent="SwordPosters"]
-position = Vector2(1, -6)
-texture = ExtResource("6_astda")
-hframes = 3
-vframes = 3
-
-[node name="effect1" type="Sprite2D" parent="SwordPosters"]
-position = Vector2(1, -6)
-texture = ExtResource("6_astda")
-hframes = 3
-vframes = 3
-frame = 6
-
-[node name="effect4" type="Sprite2D" parent="SwordPosters"]
-position = Vector2(49, -5)
-texture = ExtResource("6_astda")
-hframes = 3
-vframes = 3
-frame = 6
-
-[node name="effect2" type="Sprite2D" parent="SwordPosters"]
-position = Vector2(17, -6)
-texture = ExtResource("6_astda")
-hframes = 3
-vframes = 3
-frame = 7
-
-[node name="effect5" type="Sprite2D" parent="SwordPosters"]
-position = Vector2(64, -6)
-texture = ExtResource("6_astda")
-hframes = 3
-vframes = 3
-frame = 7
-
-[node name="effect3" type="Sprite2D" parent="SwordPosters"]
-position = Vector2(32, -5)
-texture = ExtResource("6_astda")
-hframes = 3
-vframes = 3
-frame = 8
-
-[node name="Hilt1" type="Sprite2D" parent="SwordPosters"]
-position = Vector2(1, 10)
-texture = ExtResource("6_astda")
-hframes = 3
-vframes = 3
-frame = 3
-
-[node name="Hilt2" type="Sprite2D" parent="SwordPosters"]
-position = Vector2(17, 10)
-texture = ExtResource("6_astda")
-hframes = 3
-vframes = 3
-frame = 4
-
-[node name="Hilt3" type="Sprite2D" parent="SwordPosters"]
-position = Vector2(32, 10)
-texture = ExtResource("6_astda")
-hframes = 3
-vframes = 3
-frame = 3
-
-[node name="Hilt4" type="Sprite2D" parent="SwordPosters"]
-position = Vector2(49, 10)
-texture = ExtResource("6_astda")
-hframes = 3
-vframes = 3
-frame = 4
-
-[node name="Hilt5" type="Sprite2D" parent="SwordPosters"]
-position = Vector2(64, 10)
-texture = ExtResource("6_astda")
-hframes = 3
-vframes = 3
-frame = 5
-
-[node name="Blade4" type="Sprite2D" parent="SwordPosters"]
-position = Vector2(17, -6)
-texture = ExtResource("6_astda")
-hframes = 3
-vframes = 3
-
-[node name="Blade2" type="Sprite2D" parent="SwordPosters"]
-position = Vector2(32, -6)
-texture = ExtResource("6_astda")
-hframes = 3
-vframes = 3
-frame = 1
-
-[node name="Blade3" type="Sprite2D" parent="SwordPosters"]
-position = Vector2(49, -6)
-texture = ExtResource("6_astda")
-hframes = 3
-vframes = 3
-frame = 2
-
-[node name="Blade5" type="Sprite2D" parent="SwordPosters"]
-position = Vector2(64, -6)
-texture = ExtResource("6_astda")
-hframes = 3
-vframes = 3
-frame = 2
-
 [node name="MaskCase" parent="." instance=ExtResource("7_pxmlp")]
-position = Vector2(160, 115)
-scale = Vector2(2, 2)
+position = Vector2(160, 120)
 
-[node name="Sprite2D2" type="Sprite2D" parent="MaskCase"]
-position = Vector2(5, 3)
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(170, 124)
+scale = Vector2(2, 2)
 texture = ExtResource("8_nfxah")

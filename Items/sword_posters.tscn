@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://wi0nlsuyvwsy"]
+[gd_scene load_steps=5 format=3 uid="uid://wi0nlsuyvwsy"]
 
+[ext_resource type="Script" uid="uid://baige6b4svghm" path="res://Items/sword_posters.gd" id="1_u36vw"]
 [ext_resource type="Texture2D" uid="uid://bhqkrjjsrphxk" path="res://textures/grey_frame.webp" id="1_wtwkl"]
+[ext_resource type="Texture2D" uid="uid://c0ccg5tvmfxum" path="res://textures/Sword_sheet_48x48_16x16_each.webp" id="3_g8rfq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wtwkl"]
 size = Vector2(80, 32)
@@ -8,6 +10,9 @@ size = Vector2(80, 32)
 [node name="SwordPosters" type="Node2D"]
 
 [node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_u36vw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(32, 0)
@@ -36,3 +41,106 @@ texture = ExtResource("1_wtwkl")
 texture_repeat = 1
 position = Vector2(16, 0)
 texture = ExtResource("1_wtwkl")
+
+[node name="Blade1" type="Sprite2D" parent="."]
+position = Vector2(1, -6)
+texture = ExtResource("3_g8rfq")
+hframes = 3
+vframes = 3
+
+[node name="effect1" type="Sprite2D" parent="."]
+position = Vector2(1, -6)
+texture = ExtResource("3_g8rfq")
+hframes = 3
+vframes = 3
+frame = 6
+
+[node name="effect4" type="Sprite2D" parent="."]
+position = Vector2(49, -5)
+texture = ExtResource("3_g8rfq")
+hframes = 3
+vframes = 3
+frame = 6
+
+[node name="effect2" type="Sprite2D" parent="."]
+position = Vector2(17, -6)
+texture = ExtResource("3_g8rfq")
+hframes = 3
+vframes = 3
+frame = 7
+
+[node name="effect5" type="Sprite2D" parent="."]
+position = Vector2(64, -6)
+texture = ExtResource("3_g8rfq")
+hframes = 3
+vframes = 3
+frame = 7
+
+[node name="effect3" type="Sprite2D" parent="."]
+position = Vector2(32, -5)
+texture = ExtResource("3_g8rfq")
+hframes = 3
+vframes = 3
+frame = 8
+
+[node name="Hilt1" type="Sprite2D" parent="."]
+position = Vector2(1, 10)
+texture = ExtResource("3_g8rfq")
+hframes = 3
+vframes = 3
+frame = 3
+
+[node name="Hilt2" type="Sprite2D" parent="."]
+position = Vector2(17, 10)
+texture = ExtResource("3_g8rfq")
+hframes = 3
+vframes = 3
+frame = 4
+
+[node name="Hilt3" type="Sprite2D" parent="."]
+position = Vector2(32, 10)
+texture = ExtResource("3_g8rfq")
+hframes = 3
+vframes = 3
+frame = 3
+
+[node name="Hilt4" type="Sprite2D" parent="."]
+position = Vector2(49, 10)
+texture = ExtResource("3_g8rfq")
+hframes = 3
+vframes = 3
+frame = 4
+
+[node name="Hilt5" type="Sprite2D" parent="."]
+position = Vector2(64, 10)
+texture = ExtResource("3_g8rfq")
+hframes = 3
+vframes = 3
+frame = 5
+
+[node name="Blade4" type="Sprite2D" parent="."]
+position = Vector2(17, -6)
+texture = ExtResource("3_g8rfq")
+hframes = 3
+vframes = 3
+
+[node name="Blade2" type="Sprite2D" parent="."]
+position = Vector2(32, -6)
+texture = ExtResource("3_g8rfq")
+hframes = 3
+vframes = 3
+frame = 1
+
+[node name="Blade3" type="Sprite2D" parent="."]
+position = Vector2(49, -6)
+texture = ExtResource("3_g8rfq")
+hframes = 3
+vframes = 3
+frame = 2
+
+[node name="Blade5" type="Sprite2D" parent="."]
+position = Vector2(64, -6)
+texture = ExtResource("3_g8rfq")
+hframes = 3
+vframes = 3
+frame = 2

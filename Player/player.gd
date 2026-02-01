@@ -11,6 +11,8 @@ func _physics_process(_delta: float) -> void:
 	# Handle interact
 	if InteractArea.has_overlapping_areas():
 		var area := InteractArea.get_overlapping_areas()[0] as Interactable
+		# Show interact key display
+		#TODO
 		# Interact with body
 		if Input.is_action_just_pressed("interact") && area:
 			area.execute()
