@@ -10,7 +10,7 @@ var current_room: String = ""
 
 var codes = {
 	"conquest": "2310",
-	"war": "king's sacred edge",
+	"war": "kings sacred edge",
 	"death": "203088",
 }
 
@@ -26,7 +26,7 @@ func execute() -> void:
 
 func _on_modal_code_entered(submitted_text: String):
 	can_move.emit(true)
-	if submitted_text.to_lower() == codes[current_room]:
+	if submitted_text.to_lower().replace("'", "") == codes[current_room]:
 		access_granted.emit()
 		print("GREEN PINPAD")
 	else: 
