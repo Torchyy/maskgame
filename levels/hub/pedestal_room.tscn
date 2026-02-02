@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://dkxxiuwq1acug" path="res://levels/hub/pedestal_room.gd" id="1_hbxay"]
 [ext_resource type="Texture2D" uid="uid://b4fb8yrtobc16" path="res://textures/Head_Pillars_48x24.webp" id="2_xvti3"]
 [ext_resource type="PackedScene" uid="uid://cthv6jhgwa5km" path="res://Items/poem_gui.tscn" id="4_dyuoi"]
-[ext_resource type="Script" path="res://levels/hub/pedestal.gd" id="4_fdc8u"]
+[ext_resource type="Script" uid="uid://noarr8kwoesf" path="res://levels/hub/pedestal.gd" id="4_fdc8u"]
 [ext_resource type="PackedScene" uid="uid://j17h1ouqx4i6" path="res://Items/board.tscn" id="5_dyuoi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fdc8u"]

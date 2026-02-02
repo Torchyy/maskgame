@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cwsglvnpcaiwi" path="res://levels/hub/pedestal_room.tscn" id="2_00ues"]
 [ext_resource type="AudioStream" uid="uid://dsn77fveki2lg" path="res://music/main_theme.mp3" id="2_47e7m"]
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="2_qcedg"]
-[ext_resource type="Script" path="res://levels/camera_2d.gd" id="3_chjw3"]
+[ext_resource type="Script" uid="uid://k8vhc84jktyy" path="res://levels/camera_2d.gd" id="3_chjw3"]
 [ext_resource type="PackedScene" uid="uid://brgv4cg6oeclo" path="res://levels/war/warRoom.tscn" id="3_qcedg"]
 [ext_resource type="PackedScene" uid="uid://ct7ftpqctbyix" path="res://Player/player.tscn" id="5_chjw3"]
 [ext_resource type="PackedScene" uid="uid://dlwqsyx5p8705" path="res://levels/conquest/conquest_room.tscn" id="6_6vc24"]
