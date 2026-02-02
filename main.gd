@@ -7,13 +7,13 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
 
 
 func _on_play_pressed() -> void:
 	$World/MainMenu.queue_free()
-	var scene := load("res://levels/level_main.tscn")
+	var scene := preload("res://levels/level_main.tscn")
 	var instance = scene.instantiate()
 	PlayerStats.reset()
 	$World.add_child(instance)
