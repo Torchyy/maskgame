@@ -12,6 +12,7 @@ size = Vector2(30, 64)
 size = Vector2(30, 24)
 
 [node name="MaskCase" type="Node2D"]
+z_index = 1
 script = ExtResource("1_q3bkg")
 
 [node name="Area2D" type="Area2D" parent="."]

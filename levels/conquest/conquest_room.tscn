@@ -1,12 +1,12 @@
 [gd_scene load_steps=14 format=4 uid="uid://dlwqsyx5p8705"]
 
-[ext_resource type="Script" path="res://levels/conquest/conquest_room.gd" id="1_2b8ee"]
+[ext_resource type="Script" uid="uid://d2kwbsu5qmee3" path="res://levels/conquest/conquest_room.gd" id="1_2b8ee"]
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="1_wfomy"]
 [ext_resource type="PackedScene" uid="uid://biuhyqq6cpri7" path="res://Items/target.tscn" id="2_r2fdh"]
 [ext_resource type="PackedScene" uid="uid://dhywcah30b2qf" path="res://Items/bow.tscn" id="3_2b8ee"]
 [ext_resource type="PackedScene" uid="uid://bth6xu8a8qdv8" path="res://Items/arrow.tscn" id="4_ranu8"]
 [ext_resource type="PackedScene" uid="uid://daqkx8rt5iob0" path="res://Items/mask_case.tscn" id="6_2yig4"]
-[ext_resource type="PackedScene" path="res://Items/conquest_mask.tscn" id="6_n7fwv"]
+[ext_resource type="PackedScene" uid="uid://cbrf3ylp08xal" path="res://Items/conquest_mask.tscn" id="6_n7fwv"]
 [ext_resource type="PackedScene" uid="uid://jdse76o0luqg" path="res://Items/keypad.tscn" id="7_n7fwv"]
 [ext_resource type="Texture2D" uid="uid://hnbasjagovqk" path="res://textures/2_notches_lodged_arrow.png" id="9_n7fwv"]
 [ext_resource type="Texture2D" uid="uid://w4breqvhpvge" path="res://textures/3_notches_lodged_arrow_32x32.png" id="10_c7p2f"]
@@ -17,6 +17,7 @@
 size = Vector2(5, 17)
 
 [node name="ConquestRoom" type="Node2D"]
+y_sort_enabled = true
 script = ExtResource("1_2b8ee")
 
 [node name="Tiles" type="Node2D" parent="."]
@@ -69,7 +70,7 @@ position = Vector2(253, 71)
 position = Vector2(238, 122)
 
 [node name="MaskCase" parent="." instance=ExtResource("6_2yig4")]
-position = Vector2(239, 119)
+position = Vector2(239, 122)
 
 [node name="Keypad" parent="." instance=ExtResource("7_n7fwv")]
 position = Vector2(36, 44)
