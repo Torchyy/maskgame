@@ -6,4 +6,4 @@ func _on_button_pressed() -> void:
 	var isntance = level.instantiate()
 	$"/root/Main/World".add_child(isntance)
 	
-	self.queue_free()
+	$"..".queue_free()

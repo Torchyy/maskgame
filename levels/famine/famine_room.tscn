@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://btjnwfs8ffhjt" path="res://Items/famine_mask.tscn" id="6_0wmti"]
 
 [node name="FamineRoom" type="Node2D"]
+y_sort_enabled = true
 
 [node name="Tiles" type="Node2D" parent="."]
 
@@ -28,12 +29,15 @@ position = Vector2(246, 111)
 scale = Vector2(1.5, 1.5)
 
 [node name="Meat" parent="." instance=ExtResource("3_0wmti")]
+z_index = 1
 position = Vector2(33, 92)
 
 [node name="Rock" parent="." instance=ExtResource("4_rl86f")]
+z_index = 1
 position = Vector2(44, 109)
 
 [node name="Metal" parent="." instance=ExtResource("5_rhdrk")]
+z_index = 1
 position = Vector2(31, 130)
 
 [node name="FamineMask" parent="." instance=ExtResource("6_0wmti")]

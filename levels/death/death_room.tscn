@@ -1,17 +1,22 @@
-[gd_scene load_steps=11 format=4 uid="uid://4osaf3j7v8d8"]
+[gd_scene load_steps=12 format=4 uid="uid://4osaf3j7v8d8"]
 
 [ext_resource type="Script" uid="uid://bpsloev2ukxhb" path="res://levels/death/death_room.gd" id="1_qgeo1"]
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="1_w1vt1"]
 [ext_resource type="PackedScene" uid="uid://hxfj8odl7exn" path="res://Items/paper_tree.tscn" id="2_7x0bf"]
 [ext_resource type="Texture2D" uid="uid://c8ajevvn6vxnl" path="res://textures/deco-tree.png" id="3_7x0bf"]
 [ext_resource type="PackedScene" uid="uid://jdse76o0luqg" path="res://Items/keypad.tscn" id="5_ps0s8"]
-[ext_resource type="PackedScene" path="res://Items/death_mask.tscn" id="6_oodx8"]
-[ext_resource type="PackedScene" path="res://levels/death/graves.tscn" id="7_r68hu"]
-[ext_resource type="PackedScene" path="res://Items/grave.tscn" id="8_g4wio"]
+[ext_resource type="PackedScene" uid="uid://f1rkaq1v7iir" path="res://Items/death_mask.tscn" id="6_oodx8"]
+[ext_resource type="PackedScene" uid="uid://c18mxp31hgxeb" path="res://levels/death/graves.tscn" id="7_r68hu"]
+[ext_resource type="PackedScene" uid="uid://du3nkmowkxe4d" path="res://Items/grave.tscn" id="8_g4wio"]
 [ext_resource type="PackedScene" uid="uid://daqkx8rt5iob0" path="res://Items/mask_case.tscn" id="9_g4wio"]
 [ext_resource type="PackedScene" uid="uid://bt7uign0lyivm" path="res://modals/paper_modal.tscn" id="10_oodx8"]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oodx8"]
+radius = 6.0
+height = 16.0
+
 [node name="DeathRoom" type="Node2D"]
+y_sort_enabled = true
 script = ExtResource("1_qgeo1")
 
 [node name="Node2D" type="Node2D" parent="."]
@@ -32,6 +37,7 @@ tile_set = ExtResource("1_w1vt1")
 position = Vector2(115, 39)
 
 [node name="Graves" parent="." instance=ExtResource("7_r68hu")]
+y_sort_enabled = true
 
 [node name="Grave2" parent="Graves" instance=ExtResource("8_g4wio")]
 position = Vector2(81, 145)
@@ -70,37 +76,16 @@ position = Vector2(283, 57)
 position = Vector2(284, 55)
 
 [node name="PaperTree" parent="." instance=ExtResource("2_7x0bf")]
-y_sort_enabled = true
 position = Vector2(55, 67)
 
 [node name="PaperTree2" parent="." instance=ExtResource("2_7x0bf")]
-y_sort_enabled = true
 position = Vector2(46, 124)
 
 [node name="PaperTree3" parent="." instance=ExtResource("2_7x0bf")]
-y_sort_enabled = true
 position = Vector2(203, 59)
 
 [node name="PaperTree4" parent="." instance=ExtResource("2_7x0bf")]
-y_sort_enabled = true
 position = Vector2(243, 117)
-
-[node name="CollisionShape2D" parent="PaperTree4" index="0"]
-position = Vector2(8, 14.5)
-
-[node name="Sprite2D" parent="PaperTree4" index="1"]
-flip_h = true
-
-[node name="StaticBody2D" parent="PaperTree4/Sprite2D" index="0"]
-position = Vector2(15, 0)
-
-[node name="Deco-tree" type="Sprite2D" parent="PaperTree4"]
-position = Vector2(-158, -8)
-texture = ExtResource("3_7x0bf")
-
-[node name="Deco-tree2" type="Sprite2D" parent="PaperTree4"]
-position = Vector2(-26, 11)
-texture = ExtResource("3_7x0bf")
 
 [node name="PaperModal" parent="." instance=ExtResource("10_oodx8")]
 visible = false
@@ -110,4 +95,26 @@ offset_top = 88.0
 offset_right = 157.0
 offset_bottom = 88.0
 
-[editable path="PaperTree4"]
+[node name="Deco-tree" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(85, 109)
+texture = ExtResource("3_7x0bf")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Deco-tree"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Deco-tree/StaticBody2D"]
+position = Vector2(-2, 19)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_oodx8")
+
+[node name="Deco-tree2" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(210, 129)
+texture = ExtResource("3_7x0bf")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Deco-tree2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Deco-tree2/StaticBody2D"]
+position = Vector2(-2, 18)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_oodx8")

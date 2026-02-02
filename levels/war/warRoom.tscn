@@ -49,7 +49,6 @@ z_index = 1
 position = Vector2(184, 99)
 
 [node name="MaskCase" parent="." instance=ExtResource("7_pxmlp")]
-z_index = 1
 position = Vector2(184, 99)
 
 [node name="SwordHints" parent="." instance=ExtResource("9_drffs")]
