@@ -22,3 +22,4 @@ func reset() -> void:
 	warDone = false
 	famineDone = false
 	deathDone = false
+	mask_added.emit()
