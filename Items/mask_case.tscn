@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://daqkx8rt5iob0"]
+[gd_scene format=3 uid="uid://daqkx8rt5iob0"]
 
 [ext_resource type="Texture2D" uid="uid://07m8km2irvx1" path="res://textures/Mask_Case.webp" id="1_k7dcx"]
 [ext_resource type="Script" uid="uid://dsmacvv6vy55k" path="res://Items/mask_case_node.gd" id="1_q3bkg"]
@@ -11,32 +11,32 @@ size = Vector2(30, 64)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cxgdq"]
 size = Vector2(30, 24)
 
-[node name="MaskCase" type="Node2D"]
+[node name="MaskCase" type="Node2D" unique_id=1064787584]
 z_index = 1
 script = ExtResource("1_q3bkg")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." unique_id=645186365]
 collision_layer = 0
 collision_mask = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=579594584]
 position = Vector2(-1, 0)
 shape = SubResource("RectangleShape2D_ilvey")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1690043327]
 scale = Vector2(2, 2)
 texture = ExtResource("1_k7dcx")
 
-[node name="Hitbox" type="StaticBody2D" parent="."]
+[node name="Hitbox" type="StaticBody2D" parent="." unique_id=1875866985]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1240874955]
 position = Vector2(-1, 20)
 shape = SubResource("RectangleShape2D_cxgdq")
 
-[node name="MaskCaseOpen" type="Sprite2D" parent="."]
+[node name="MaskCaseOpen" type="Sprite2D" parent="." unique_id=1741290021]
 visible = false
 scale = Vector2(2, 2)
 texture = ExtResource("4_pgsv0")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1679073168]
 stream = ExtResource("4_q3bkg")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cthv6jhgwa5km"]
+[gd_scene format=3 uid="uid://cthv6jhgwa5km"]
 
 [ext_resource type="Script" uid="uid://c5ywp4bqqdnnn" path="res://Items/poem_gui.gd" id="1_aywkr"]
 [ext_resource type="Texture2D" uid="uid://buisny0qqxlna" path="res://textures/gui.png" id="1_ju225"]
@@ -9,18 +9,18 @@ size = Vector2(319, 197)
 [sub_resource type="LabelSettings" id="LabelSettings_4l0ur"]
 font_size = 19
 
-[node name="PoemGui" type="Area2D"]
+[node name="PoemGui" type="Area2D" unique_id=1583617962]
 script = ExtResource("1_aywkr")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=319831580]
 position = Vector2(-0.5, -0.5)
 shape = SubResource("RectangleShape2D_aywkr")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2129140578]
 scale = Vector2(4, 4)
 texture = ExtResource("1_ju225")
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="." unique_id=1377997909]
 offset_left = -154.0
 offset_top = -64.0
 offset_right = 161.0
@@ -31,7 +31,7 @@ Drum in blood, half a reaper
 Before rest, gnats to feast"
 label_settings = SubResource("LabelSettings_4l0ur")
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=122743559]
 offset_left = 144.0
 offset_top = -96.0
 offset_right = 156.0

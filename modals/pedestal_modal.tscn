@@ -1,10 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://bnl4byuvpes5d"]
+[gd_scene format=3 uid="uid://bnl4byuvpes5d"]
 
 [ext_resource type="Texture2D" uid="uid://buisny0qqxlna" path="res://textures/gui.png" id="1_8ohfs"]
 [ext_resource type="Script" uid="uid://cqqj1gde77c2t" path="res://modals/pedestal_modal.gd" id="1_ile2j"]
 [ext_resource type="Texture2D" uid="uid://b4fb8yrtobc16" path="res://textures/Head_Pillars_48x24.webp" id="2_ile2j"]
 
-[node name="PedestalModal" type="Control"]
+[node name="PedestalModal" type="Control" unique_id=1039756802]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -13,12 +13,12 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ile2j")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=416898665]
 position = Vector2(160, 71)
 scale = Vector2(2, 2)
 texture = ExtResource("1_8ohfs")
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1092451422]
 position = Vector2(160, 73)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_ile2j")

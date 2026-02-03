@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://k8qtjdxql5jk"]
+[gd_scene format=3 uid="uid://k8qtjdxql5jk"]
 
 [ext_resource type="Script" uid="uid://sq7jj2nywmcb" path="res://Items/metal.gd" id="1_37fgs"]
 [ext_resource type="Texture2D" uid="uid://g1pwx46nqty2" path="res://textures/scrap metal.png" id="1_oph4t"]
@@ -9,18 +9,18 @@ size = Vector2(14, 13)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mx3x6"]
 size = Vector2(14, 13)
 
-[node name="Metal" type="Area2D"]
+[node name="Metal" type="Area2D" unique_id=1318559933]
 script = ExtResource("1_37fgs")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1187699415]
 position = Vector2(0, -1.5)
 shape = SubResource("RectangleShape2D_37fgs")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=843858091]
 texture = ExtResource("1_oph4t")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D" unique_id=1295001386]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D" unique_id=1130105916]
 position = Vector2(0, -1.5)
 shape = SubResource("RectangleShape2D_mx3x6")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://jdse76o0luqg"]
+[gd_scene format=3 uid="uid://jdse76o0luqg"]
 
 [ext_resource type="Script" uid="uid://boaax20u80k4l" path="res://Items/keypad.gd" id="1_of1yp"]
 [ext_resource type="Texture2D" uid="uid://b0bxqx22wsu5i" path="res://textures/keypad_sprite_16x16.png" id="1_r6kpw"]
@@ -7,18 +7,18 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mvc5m"]
 size = Vector2(16, 16)
 
-[node name="Keypad" type="Area2D"]
+[node name="Keypad" type="Area2D" unique_id=950838830]
 collision_layer = 4
 collision_mask = 0
 script = ExtResource("1_of1yp")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=433417356]
 texture = ExtResource("1_r6kpw")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=535992414]
 shape = SubResource("RectangleShape2D_mvc5m")
 
-[node name="InputModal" parent="." instance=ExtResource("3_mvc5m")]
+[node name="InputModal" parent="." unique_id=291052836 instance=ExtResource("3_mvc5m")]
 visible = false
 z_index = 3
 offset_left = 86.0

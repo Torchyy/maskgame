@@ -1,7 +1,7 @@
-[gd_scene load_steps=0 format=3 uid="uid://buspg8nswbhrn"]
+[gd_scene format=3 uid="uid://buspg8nswbhrn"]
 
-[node name="Shovel" type="Area2D"]
+[node name="Shovel" type="Area2D" unique_id=1915110415]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=291758611]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1530240038]

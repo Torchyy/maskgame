@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bth6xu8a8qdv8"]
+[gd_scene format=3 uid="uid://bth6xu8a8qdv8"]
 
 [ext_resource type="Script" uid="uid://ipcpj22igrhd" path="res://Items/arrow.gd" id="1_7ryke"]
 [ext_resource type="Texture2D" uid="uid://c62wn82v1kq20" path="res://textures/arrow.png" id="1_xv4f7"]
@@ -9,18 +9,18 @@ size = Vector2(16, 16)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o5v04"]
 size = Vector2(16.5, 15.75)
 
-[node name="Arrow" type="Area2D"]
+[node name="Arrow" type="Area2D" unique_id=179524154]
 script = ExtResource("1_7ryke")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1728738944]
 position = Vector2(-1, -1)
 shape = SubResource("RectangleShape2D_7ryke")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2087440807]
 texture = ExtResource("1_xv4f7")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D" unique_id=1908769431]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D" unique_id=1499352959]
 position = Vector2(-0.75, -0.875)
 shape = SubResource("RectangleShape2D_o5v04")

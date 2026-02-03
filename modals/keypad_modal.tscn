@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://u7y560ynke5d"]
+[gd_scene format=3 uid="uid://u7y560ynke5d"]
 
 [ext_resource type="Script" uid="uid://oj1b60330jln" path="res://modals/keypad_modal.gd" id="1_rqb40"]
 [ext_resource type="Script" uid="uid://xhgekpfwcoyl" path="res://modals/line_edit.gd" id="2_0pdi7"]
 
-[node name="InputModal" type="Control"]
+[node name="InputModal" type="Control" unique_id=1400055711]
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -14,7 +14,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_rqb40")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1218026830]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -22,7 +22,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Modal" type="PanelContainer" parent="."]
+[node name="Modal" type="PanelContainer" parent="." unique_id=564186743]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -36,28 +36,28 @@ offset_bottom = 64.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="Modal"]
+[node name="MarginContainer" type="MarginContainer" parent="Modal" unique_id=188097013]
 layout_mode = 2
 theme_override_constants/margin_left = 16
 theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 16
 theme_override_constants/margin_bottom = 12
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Modal/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Modal/MarginContainer" unique_id=1728254913]
 layout_mode = 2
 size_flags_vertical = 8
 theme_override_constants/separation = 8
 alignment = 1
 
-[node name="HeaderLabel" type="Label" parent="Modal/MarginContainer/VBoxContainer"]
+[node name="HeaderLabel" type="Label" parent="Modal/MarginContainer/VBoxContainer" unique_id=596748892]
 layout_mode = 2
 text = "Enter Input"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Modal/MarginContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Modal/MarginContainer/VBoxContainer" unique_id=942098366]
 layout_mode = 2
 alignment = 1
 
-[node name="LineEdit" type="LineEdit" parent="Modal/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="LineEdit" type="LineEdit" parent="Modal/MarginContainer/VBoxContainer/HBoxContainer" unique_id=432955956]
 layout_mode = 2
 placeholder_text = "Type..."
 max_length = 25
@@ -65,18 +65,18 @@ expand_to_text_length = true
 caret_blink = true
 script = ExtResource("2_0pdi7")
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="Modal/MarginContainer/VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="Modal/MarginContainer/VBoxContainer" unique_id=1854615695]
 layout_mode = 2
 size_flags_vertical = 8
 alignment = 1
 
-[node name="CancelButton" type="Button" parent="Modal/MarginContainer/VBoxContainer/HBoxContainer2"]
+[node name="CancelButton" type="Button" parent="Modal/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=780624178]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
 text = "Cancel"
 
-[node name="ConfirmButton" type="Button" parent="Modal/MarginContainer/VBoxContainer/HBoxContainer2"]
+[node name="ConfirmButton" type="Button" parent="Modal/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=506838126]
 visible = false
 layout_mode = 2
 size_flags_horizontal = 4

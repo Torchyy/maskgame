@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://biuhyqq6cpri7"]
+[gd_scene format=3 uid="uid://biuhyqq6cpri7"]
 
-[ext_resource type="Script" path="res://Items/target.gd" id="1_gbgn8"]
+[ext_resource type="Script" uid="uid://c1hbn3i8n8hay" path="res://Items/target.gd" id="1_gbgn8"]
 [ext_resource type="Texture2D" uid="uid://vilke6q4rcji" path="res://textures/target.png" id="2_gbgn8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gbgn8"]
@@ -9,20 +9,20 @@ size = Vector2(16, 16)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_337m3"]
 size = Vector2(16, 16)
 
-[node name="target" type="Area2D"]
+[node name="target" type="Area2D" unique_id=1733091206]
 scale = Vector2(2, 2)
 collision_layer = 4
 collision_mask = 0
 script = ExtResource("1_gbgn8")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1081452830]
 shape = SubResource("RectangleShape2D_gbgn8")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2124787894]
 texture = ExtResource("2_gbgn8")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D" unique_id=1528845950]
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D" unique_id=231583186]
 shape = SubResource("RectangleShape2D_337m3")

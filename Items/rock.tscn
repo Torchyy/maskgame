@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://co0ktl1hf7l5p"]
+[gd_scene format=3 uid="uid://co0ktl1hf7l5p"]
 
 [ext_resource type="Script" uid="uid://b85a2aqo6b2py" path="res://Items/rock.gd" id="1_2tohh"]
 [ext_resource type="Texture2D" uid="uid://cw36o5287l0a2" path="res://textures/rock.png" id="1_usn8f"]
@@ -9,18 +9,18 @@ size = Vector2(14, 8)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rxurg"]
 size = Vector2(14, 8)
 
-[node name="Rock" type="Area2D"]
+[node name="Rock" type="Area2D" unique_id=1992559504]
 script = ExtResource("1_2tohh")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=246608123]
 position = Vector2(-1, 2)
 shape = SubResource("RectangleShape2D_2tohh")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2068947944]
 texture = ExtResource("1_usn8f")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D" unique_id=137309383]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D" unique_id=1301577447]
 position = Vector2(-1, 2)
 shape = SubResource("RectangleShape2D_rxurg")

@@ -1,17 +1,21 @@
-[gd_scene load_steps=4 format=3 uid="uid://cuc478kdb3d05"]
+[gd_scene format=3 uid="uid://cuc478kdb3d05"]
 
 [ext_resource type="Script" uid="uid://bbcow3qdcahgg" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://cndu2csm2vsoc" path="res://menus/main_menu.tscn" id="2_0xm2m"]
 [ext_resource type="AudioStream" uid="uid://dsn77fveki2lg" path="res://music/main_theme.mp3" id="3_h2yge"]
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" unique_id=1887890830]
 script = ExtResource("1_ig7tw")
 
-[node name="World" type="Node2D" parent="."]
+[node name="World" type="Node2D" parent="." unique_id=677530410]
 
-[node name="MainMenu" parent="World" instance=ExtResource("2_0xm2m")]
+[node name="MainMenu" parent="World" unique_id=1989621558 instance=ExtResource("2_0xm2m")]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="HBoxContainer" parent="World/MainMenu/Control" parent_id_path=PackedInt32Array(1989621558, 1976687940) index="0" unique_id=2123212875]
+offset_top = 0.0
+offset_bottom = 179.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=284263114]
 stream = ExtResource("3_h2yge")
 autoplay = true
 

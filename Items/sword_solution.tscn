@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://crq1r5md3xhb2"]
+[gd_scene format=3 uid="uid://crq1r5md3xhb2"]
 
 [ext_resource type="Texture2D" uid="uid://cjocwowqq1w2o" path="res://textures/Gold_frame.webp" id="1_owl35"]
 [ext_resource type="Script" uid="uid://dplj1pbt7t5jb" path="res://Items/sword_solution.gd" id="1_xkts4"]
@@ -7,18 +7,18 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xkts4"]
 size = Vector2(32, 16)
 
-[node name="Area2D" type="Area2D"]
+[node name="Area2D" type="Area2D" unique_id=475885592]
 collision_layer = 4
 collision_mask = 0
 script = ExtResource("1_xkts4")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1871223475]
 texture = ExtResource("1_owl35")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=411962081]
 shape = SubResource("RectangleShape2D_xkts4")
 
-[node name="Blade2" type="Sprite2D" parent="."]
+[node name="Blade2" type="Sprite2D" parent="." unique_id=863331877]
 position = Vector2(6.00002, 1.90735e-05)
 rotation = 1.57079
 texture = ExtResource("3_hungu")
@@ -26,7 +26,7 @@ hframes = 3
 vframes = 3
 frame = 1
 
-[node name="Handle3" type="Sprite2D" parent="."]
+[node name="Handle3" type="Sprite2D" parent="." unique_id=782208109]
 position = Vector2(-9.99998, 1.90735e-05)
 rotation = 1.57079
 texture = ExtResource("3_hungu")
@@ -34,7 +34,7 @@ hframes = 3
 vframes = 3
 frame = 5
 
-[node name="Effect2" type="Sprite2D" parent="."]
+[node name="Effect2" type="Sprite2D" parent="." unique_id=1827499405]
 position = Vector2(6.00002, 1.90735e-05)
 rotation = 1.57079
 texture = ExtResource("3_hungu")

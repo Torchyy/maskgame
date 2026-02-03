@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://dm2odvad5tmdf"]
+[gd_scene format=4 uid="uid://dm2odvad5tmdf"]
 
 [ext_resource type="Script" uid="uid://biv7ts75e3rtc" path="res://levels/level_main.gd" id="1_a51tu"]
 [ext_resource type="PackedScene" uid="uid://cwsglvnpcaiwi" path="res://levels/hub/pedestal_room.tscn" id="2_00ues"]
@@ -20,133 +20,133 @@ size = Vector2(16, 2)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1vx7t"]
 size = Vector2(16, 2)
 
-[node name="LevelMain" type="Node2D" node_paths=PackedStringArray("Camera", "User", "Audio")]
+[node name="LevelMain" type="Node2D" unique_id=1509109544 node_paths=PackedStringArray("Camera", "User", "Audio")]
 y_sort_enabled = true
 script = ExtResource("1_a51tu")
 Camera = NodePath("Camera2D")
 User = NodePath("Player")
 Audio = NodePath("AudioStreamPlayer2D")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="." unique_id=1684482411]
 stream = ExtResource("2_47e7m")
 autoplay = true
 
-[node name="Boundaries" type="TileMapLayer" parent="."]
+[node name="Boundaries" type="TileMapLayer" parent="." unique_id=977030315]
 visible = false
 tile_map_data = PackedByteArray("AAAUAAQAAAAgAAYAAAAUAAUAAAAgAAYAAAAUAAYAAAAgAAYAAAAVAAQAAAAgAAYAAAAVAAUAAAAgAAYAAAAVAAYAAAAgAAYAAAD//wQAAAAgAAYAAAD//wUAAAAgAAYAAAD//wYAAAAgAAYAAAAIAAsAAAAgAAYAAAAJAAsAAAAgAAYAAAAKAAsAAAAgAAYAAAD8/wQAAAAgAAYAAAD8/wUAAAAgAAYAAAD8/wYAAAAgAAYAAAAIAPz/AAAgAAYAAAAJAPz/AAAgAAYAAAAKAPz/AAAgAAYAAAA=")
 tile_set = ExtResource("2_qcedg")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=340145543]
 z_index = 1
 anchor_mode = 0
 script = ExtResource("3_chjw3")
 
-[node name="MaskStart" type="Marker2D" parent="Camera2D"]
+[node name="MaskStart" type="Marker2D" parent="Camera2D" unique_id=1213931423]
 position = Vector2(12, 12)
 
-[node name="pedestalRoom" parent="." instance=ExtResource("2_00ues")]
+[node name="pedestalRoom" parent="." unique_id=1164993504 instance=ExtResource("2_00ues")]
 
-[node name="WarRoom" parent="." instance=ExtResource("3_qcedg")]
+[node name="WarRoom" parent="." unique_id=2120779304 instance=ExtResource("3_qcedg")]
 position = Vector2(352, 0)
 
-[node name="DeathRoom" parent="." instance=ExtResource("9_47e7m")]
+[node name="DeathRoom" parent="." unique_id=308839857 instance=ExtResource("9_47e7m")]
 position = Vector2(-386, -15)
 
-[node name="ConquestRoom" parent="." instance=ExtResource("6_6vc24")]
+[node name="ConquestRoom" parent="." unique_id=1878781539 instance=ExtResource("6_6vc24")]
 position = Vector2(-16, -254)
 
-[node name="FamineRoom" parent="." instance=ExtResource("8_pexq2")]
+[node name="FamineRoom" parent="." unique_id=797713852 instance=ExtResource("8_pexq2")]
 position = Vector2(0, 222)
 
-[node name="MarkerWar" type="Marker2D" parent="."]
+[node name="MarkerWar" type="Marker2D" parent="." unique_id=2045242073]
 position = Vector2(376, 88)
 
-[node name="MarkerWarToHub" type="Marker2D" parent="."]
+[node name="MarkerWarToHub" type="Marker2D" parent="." unique_id=1350547477]
 position = Vector2(296, 88)
 
-[node name="MarkerConquest" type="Marker2D" parent="."]
+[node name="MarkerConquest" type="Marker2D" parent="." unique_id=577648087]
 position = Vector2(152, -103)
 
-[node name="MarkerConquestToHub" type="Marker2D" parent="."]
+[node name="MarkerConquestToHub" type="Marker2D" parent="." unique_id=309026177]
 position = Vector2(152, 67)
 
-[node name="MarkerFamineToHub" type="Marker2D" parent="."]
+[node name="MarkerFamineToHub" type="Marker2D" parent="." unique_id=1658266133]
 position = Vector2(152, 153)
 
-[node name="MarkerFamine" type="Marker2D" parent="."]
+[node name="MarkerFamine" type="Marker2D" parent="." unique_id=2129959736]
 position = Vector2(152, 285)
 
-[node name="MarkerDeathToHub" type="Marker2D" parent="."]
+[node name="MarkerDeathToHub" type="Marker2D" parent="." unique_id=69895124]
 position = Vector2(24, 88)
 
-[node name="MarkerDeath" type="Marker2D" parent="."]
+[node name="MarkerDeath" type="Marker2D" parent="." unique_id=309189735]
 position = Vector2(-96, 88)
 
-[node name="TeleportHubToWar" type="Area2D" parent="."]
+[node name="TeleportHubToWar" type="Area2D" parent="." unique_id=259705578]
 position = Vector2(319, 88)
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TeleportHubToWar"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TeleportHubToWar" unique_id=1241047014]
 shape = SubResource("RectangleShape2D_chjw3")
 
-[node name="TeleportHubToDeath" type="Area2D" parent="."]
+[node name="TeleportHubToDeath" type="Area2D" parent="." unique_id=153329830]
 position = Vector2(1, 88)
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TeleportHubToDeath"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TeleportHubToDeath" unique_id=470970098]
 shape = SubResource("RectangleShape2D_chjw3")
 
-[node name="TeleportDeathToHub" type="Area2D" parent="."]
+[node name="TeleportDeathToHub" type="Area2D" parent="." unique_id=240019944]
 position = Vector2(-67, 89)
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TeleportDeathToHub"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TeleportDeathToHub" unique_id=219551272]
 shape = SubResource("RectangleShape2D_chjw3")
 
-[node name="TeleportHubToConquest" type="Area2D" parent="."]
+[node name="TeleportHubToConquest" type="Area2D" parent="." unique_id=1762957895]
 position = Vector2(152, 49)
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TeleportHubToConquest"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TeleportHubToConquest" unique_id=2143231581]
 shape = SubResource("RectangleShape2D_qcedg")
 
-[node name="TeleportHubToFamine" type="Area2D" parent="."]
+[node name="TeleportHubToFamine" type="Area2D" parent="." unique_id=132572976]
 position = Vector2(152, 171)
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TeleportHubToFamine"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TeleportHubToFamine" unique_id=559116431]
 shape = SubResource("RectangleShape2D_qcedg")
 
-[node name="TeleportFamineToHub" type="Area2D" parent="."]
+[node name="TeleportFamineToHub" type="Area2D" parent="." unique_id=168622835]
 position = Vector2(152, 268)
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TeleportFamineToHub"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TeleportFamineToHub" unique_id=1948819830]
 shape = SubResource("RectangleShape2D_qcedg")
 
-[node name="TeleportWarToHub" type="Area2D" parent="."]
+[node name="TeleportWarToHub" type="Area2D" parent="." unique_id=2015245355]
 position = Vector2(353, 88)
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TeleportWarToHub"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TeleportWarToHub" unique_id=1063422228]
 shape = SubResource("RectangleShape2D_chjw3")
 
-[node name="TeleportConquestToHub" type="Area2D" parent="."]
+[node name="TeleportConquestToHub" type="Area2D" parent="." unique_id=839989159]
 position = Vector2(152, -76)
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TeleportConquestToHub"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TeleportConquestToHub" unique_id=220722768]
 shape = SubResource("RectangleShape2D_1vx7t")
 
-[node name="Player" parent="." instance=ExtResource("5_chjw3")]
+[node name="Player" parent="." unique_id=1419528212 instance=ExtResource("5_chjw3")]
 position = Vector2(88, 112)
 
 [connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_finished"]

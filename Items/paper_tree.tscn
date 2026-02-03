@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://hxfj8odl7exn"]
+[gd_scene format=3 uid="uid://hxfj8odl7exn"]
 
 [ext_resource type="Texture2D" uid="uid://dmt0wlfqlt11c" path="res://textures/dead_tree_paper.png" id="1_5r7qc"]
 [ext_resource type="Script" uid="uid://co1aqw3irxqf3" path="res://Items/paper_tree.gd" id="1_lt5ap"]
@@ -10,23 +10,23 @@ size = Vector2(17, 38)
 radius = 8.0
 height = 18.0
 
-[node name="PaperTree" type="Area2D"]
+[node name="PaperTree" type="Area2D" unique_id=843170209]
 z_index = 1
 collision_layer = 4
 collision_mask = 0
 script = ExtResource("1_lt5ap")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=676891883]
 position = Vector2(-7, 10)
 shape = SubResource("RectangleShape2D_lt5ap")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1399617862]
 texture = ExtResource("1_5r7qc")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D" unique_id=1078068783]
 collision_mask = 3
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D" unique_id=685101548]
 position = Vector2(-7, 20)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_lt5ap")

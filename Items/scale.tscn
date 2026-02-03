@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://c3gbe5uxiict"]
+[gd_scene format=3 uid="uid://c3gbe5uxiict"]
 
 [ext_resource type="Script" uid="uid://bmtrwkiybqq17" path="res://Items/scale.gd" id="1_5soxv"]
 [ext_resource type="Texture2D" uid="uid://dsqluepafgyxd" path="res://textures/balanced_scale.png" id="1_yuheq"]
@@ -10,20 +10,20 @@ size = Vector2(46, 48)
 radius = 9.0
 height = 24.0
 
-[node name="Scale" type="Area2D"]
+[node name="Scale" type="Area2D" unique_id=796471808]
 z_index = 1
 script = ExtResource("1_5soxv")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2016414369]
 visible = false
 shape = SubResource("RectangleShape2D_5soxv")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=428590832]
 texture = ExtResource("1_yuheq")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D" unique_id=1226912146]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D" unique_id=1835952069]
 position = Vector2(0, 19)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_5soxv")
