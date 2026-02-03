@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://4osaf3j7v8d8"]
+[gd_scene format=4 uid="uid://4osaf3j7v8d8"]
 
 [ext_resource type="Script" uid="uid://bpsloev2ukxhb" path="res://levels/death/death_room.gd" id="1_qgeo1"]
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="1_w1vt1"]
@@ -15,106 +15,105 @@
 radius = 6.0
 height = 16.0
 
-[node name="DeathRoom" type="Node2D"]
+[node name="DeathRoom" type="Node2D" unique_id=1149918637]
 y_sort_enabled = true
 script = ExtResource("1_qgeo1")
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="Node2D" type="Node2D" parent="." unique_id=1187741687]
 
-[node name="FloorLayer" type="TileMapLayer" parent="Node2D"]
+[node name="FloorLayer" type="TileMapLayer" parent="Node2D" unique_id=1897306943]
 tile_map_data = PackedByteArray("AAAAAAMABAAOABwAADAAAAQABAAOABwAADAAAAUABAAOABwAADAAAAYABAAOABwAADABAAMABAAXABoAAAABAAQABAAXAB8AAAABAAUABAAXACAAAAABAAYABAAXACAAAAACAAMABAAYABoAAAACAAQABAAXAB8AAAACAAUABAAXACAAAAACAAYABAAXACAAAAADAAMABAAZABoAAAADAAQABAAXAB8AAAADAAUABAAXACAAAAADAAYABAAXACAAAAAEAAMABAAaABoAAAAEAAQABAAXAB8AAAAEAAUABAAXACAAAAAEAAYABAAXACAAAAAFAAMABAAbABoAAAAFAAQABAAXAB8AAAAFAAUABAAXACAAAAAFAAYABAAXACAAAAAGAAQABAAXAB8AAAAGAAUABAAXACAAAAAGAAYABAAXACAAAAAGAAcABAAXACAAAAAHAAQABAAXAB8AAAAHAAUABAAXACAAAAAHAAYABAAXACAAAAAHAAcABAAXACAAAAAIAAQABAAXAB8AAAAIAAUABAAXACAAAAAIAAYABAAXACAAAAAIAAcABAAXACAAAAAJAAQABAAXAB8AAAAJAAUABAAXACAAAAAJAAYABAAXACAAAAAJAAcABAAXACAAAAAKAAQABAAXAB8AAAAKAAUABAAXACAAAAAKAAYABAAXACAAAAAKAAcABAAXACAAAAALAAQABAAXAB8AAAALAAUABAAXACAAAAALAAYABAAXACAAAAALAAcABAAXACAAAAAMAAQABAAXAB8AAAAMAAUABAAXACAAAAAMAAYABAAXACAAAAAMAAcABAAXACAAAAANAAQABAAXAB8AAAANAAUABAAXACAAAAANAAYABAAXACAAAAANAAcABAAXACAAAAAOAAQABAAXAB8AAAAOAAUABAAXACAAAAAOAAYABAAXACAAAAAOAAcABAAXACAAAAAOAAgABAAXACAAAAAOAAkABAAXACEAAAAPAAYABAAXACAAAAAPAAcABAAXACAAAAAPAAgABAAXACAAAAAPAAkABAAXACEAAAAQAAYABAAXACAAAAAQAAcABAAXACAAAAAQAAgABAAXACAAAAAQAAkABAAXACEAAAARAAYABAAXACAAAAARAAcABAAXACAAAAARAAgABAAXACAAAAARAAkABAAXACEAAAASAAYABAAXACAAAAASAAcABAAXACAAAAASAAgABAAXACAAAAASAAkABAAXACEAAAAPAAQABAAXAB8AAAAPAAUABAAXACAAAAAQAAQABAAXAB8AAAAQAAUABAAXACAAAAARAAQABAAXAB8AAAARAAUABAAXACAAAAASAAQABAAXAB8AAAASAAUABAAXACAAAAAJAAgABAAXACAAAAAJAAkABAAXACEAAAAKAAgABAAXACAAAAAKAAkABAAXACEAAAALAAgABAAXACAAAAALAAkABAAXACEAAAAMAAgABAAXACAAAAAMAAkABAAXACEAAAANAAgABAAXACAAAAANAAkABAAXACEAAAAHAAgABAAXACAAAAAHAAkABAAXACEAAAAIAAgABAAXACAAAAAIAAkABAAXACEAAAAEAAcABAAXACAAAAAEAAgABAAXACAAAAAEAAkABAAXACEAAAAFAAcABAAXACAAAAAFAAgABAAXACAAAAAFAAkABAAXACEAAAAGAAgABAAXACAAAAAGAAkABAAXACEAAAABAAcABAAXACAAAAABAAgABAAXACAAAAABAAkABAAXACEAAAACAAcABAAXACAAAAACAAgABAAXACAAAAACAAkABAAXACEAAAADAAcABAAXACAAAAADAAgABAAXACAAAAADAAkABAAXACEAAAAAAAcABAAOABwAADAAAAgABAAOABwAADAAAAkABAAOABwAADATAAQABAAOABwAAAATAAUABAAOABwAAAATAAYABAAYACAAAAATAAcABAAOABwAAAATAAgABAAOABwAAAATAAkABAAOABwAAAATAAEABAAOABwAAAATAAIABAAOABwAAAATAAMABAAOABwAAAAAAAEABAAOABwAADAAAAIABAAOABwAADA=")
 tile_set = ExtResource("1_w1vt1")
 
-[node name="wallLayer" type="TileMapLayer" parent="Node2D/FloorLayer"]
+[node name="wallLayer" type="TileMapLayer" parent="Node2D/FloorLayer" unique_id=266919167]
 tile_map_data = PackedByteArray("AAAAAAAABAAOABwAADAAAAEABAAOABwAADAAAAIABAAOABwAADAAAAMABAAOABwAADABAAAABAABABoAAAABAAEABAABABsAAAABAAIABAABABwAAAABAAMABAABAB0AAAACAAAABAACABoAAAACAAEABAACABsAAAACAAIABAACABwAAAACAAMABAACAB0AAAADAAAABAADABoAAAADAAEABAADABsAAAADAAIABAADABwAAAADAAMABAADAB0AAAAEAAAABAAEABoAAAAEAAEABAAEABsAAAAEAAIABAAEABwAAAAEAAMABAAEAB0AAAAPAAAABAADABoAAAAPAAEABAADABsAAAAPAAIABAADABwAAAAPAAMABAADAB0AAAAQAAAABAAEABoAAAAQAAEABAAEABsAAAAQAAIABAAEABwAAAAQAAMABAAEAB0AAAARAAAABAADABoAAAARAAEABAADABsAAAARAAIABAADABwAAAARAAMABAADAB0AAAASAAAABAAEABoAAAASAAEABAAEABsAAAASAAIABAAEABwAAAASAAMABAAEAB0AAAATAAAABAAFABoAAAATAAEABAAFABsAAAATAAIABAAFABwAAAATAAMABAAFAB0AAAAFAAAABAABABoAAAAFAAEABAABABsAAAAFAAIABAABABwAAAAFAAMABAABAB0AAAAGAAAABAACABoAAAAGAAEABAACABsAAAAGAAIABAACABwAAAAGAAMABAACAB0AAAAHAAAABAADABoAAAAHAAEABAADABsAAAAHAAIABAADABwAAAAHAAMABAADAB0AAAAIAAAABAAEABoAAAAIAAEABAAEABsAAAAIAAIABAAEABwAAAAIAAMABAAEAB0AAAAJAAAABAABABoAAAAJAAEABAABABsAAAAJAAIABAABABwAAAAJAAMABAABAB0AAAAKAAAABAACABoAAAAKAAEABAACABsAAAAKAAIABAACABwAAAAKAAMABAACAB0AAAALAAAABAADABoAAAALAAEABAADABsAAAALAAIABAADABwAAAALAAMABAADAB0AAAAMAAAABAAEABoAAAAMAAEABAAEABsAAAAMAAIABAAEABwAAAAMAAMABAAEAB0AAAANAAAABAABABoAAAANAAEABAABABsAAAANAAIABAABABwAAAANAAMABAABAB0AAAAOAAAABAACABoAAAAOAAEABAACABsAAAAOAAIABAACABwAAAAOAAMABAACAB0AAAABAAoABAABABoAAAACAAoABAACABoAAAADAAoABAADABoAAAAEAAoABAAEABoAAAAFAAoABAABABoAAAAGAAoABAACABoAAAAHAAoABAADABoAAAAIAAoABAAEABoAAAAJAAoABAABABoAAAAKAAoABAACABoAAAALAAoABAADABoAAAAMAAoABAAEABoAAAANAAoABAABABoAAAAOAAoABAACABoAAAAPAAoABAADABoAAAAQAAoABAAEABoAAAARAAoABAADABoAAAASAAoABAAEABoAAAAAAAoABAAAABoAAAATAAoABAAFABoAAAAAAAQABAAOABwAADAAAAUABAAOABwAADAAAAYABAAOABwAADA=")
 tile_set = ExtResource("1_w1vt1")
 
-[node name="TileMapLayer" type="TileMapLayer" parent="Node2D/FloorLayer/wallLayer"]
+[node name="TileMapLayer" type="TileMapLayer" parent="Node2D/FloorLayer/wallLayer" unique_id=1405253111]
 tile_map_data = PackedByteArray("AAAAAAAABAAMAAQAAAAAAAEABAAMAAUAAAAAAAIABAAMAAUAAAAAAAMABAAMAAUAAAAAAAQABAAMAAUAAAAAAAUABAAMAAUAAAAAAAYABAAMAAUAAAAAAAcABAAMAAUAAAAAAAgABAAMAAUAAAAAAAkABAAMAAUAAAATAAAABAALAAQAAAATAAEABAALAAUAAAATAAIABAALAAUAAAATAAMABAALAAUAAAATAAcABAARAAgAAAATAAgABAALAAUAAAATAAkABAALAAUAAAAAAAoABAAMAAIAAAABAAoABAANAAIAAAACAAoABAANAAIAAAADAAoABAANAAIAAAAEAAoABAANAAIAAAAFAAoABAANAAIAAAAGAAoABAANAAIAAAAHAAoABAANAAIAAAAIAAoABAANAAIAAAAJAAoABAANAAIAAAAKAAoABAANAAIAAAALAAoABAANAAIAAAAMAAoABAANAAIAAAANAAoABAANAAIAAAAOAAoABAANAAIAAAAPAAoABAANAAIAAAAQAAoABAANAAIAAAARAAoABAANAAIAAAASAAoABAANAAIAAAATAAoABAALAAIAAAATAAQABAARAAgAAAATAAUABAAOAAgAADA=")
 tile_set = ExtResource("1_w1vt1")
 
-[node name="Keypad" parent="." instance=ExtResource("5_ps0s8")]
+[node name="Keypad" parent="." unique_id=2103934795 instance=ExtResource("5_ps0s8")]
 position = Vector2(115, 39)
 
-[node name="Graves" parent="." instance=ExtResource("7_r68hu")]
+[node name="Graves" parent="." unique_id=1107801807 instance=ExtResource("7_r68hu")]
 y_sort_enabled = true
 
-[node name="Grave2" parent="Graves" instance=ExtResource("8_g4wio")]
+[node name="Grave2" parent="Graves" unique_id=1694611384 instance=ExtResource("8_g4wio")]
 position = Vector2(81, 145)
 
-[node name="Grave3" parent="Graves" instance=ExtResource("8_g4wio")]
+[node name="Grave3" parent="Graves" unique_id=1966311262 instance=ExtResource("8_g4wio")]
 position = Vector2(74, 75)
 
-[node name="Grave4" parent="Graves" instance=ExtResource("8_g4wio")]
+[node name="Grave4" parent="Graves" unique_id=488515543 instance=ExtResource("8_g4wio")]
 position = Vector2(103, 91)
 
-[node name="Grave5" parent="Graves" instance=ExtResource("8_g4wio")]
+[node name="Grave5" parent="Graves" unique_id=1769639341 instance=ExtResource("8_g4wio")]
 position = Vector2(117, 127)
 
-[node name="Grave6" parent="Graves" instance=ExtResource("8_g4wio")]
+[node name="Grave6" parent="Graves" unique_id=1654982882 instance=ExtResource("8_g4wio")]
 position = Vector2(148, 143)
 
-[node name="Grave7" parent="Graves" instance=ExtResource("8_g4wio")]
+[node name="Grave7" parent="Graves" unique_id=1124445151 instance=ExtResource("8_g4wio")]
 position = Vector2(180, 133)
 
-[node name="Grave8" parent="Graves" instance=ExtResource("8_g4wio")]
+[node name="Grave8" parent="Graves" unique_id=1589639369 instance=ExtResource("8_g4wio")]
 position = Vector2(157, 73)
 
-[node name="Grave9" parent="Graves" instance=ExtResource("8_g4wio")]
+[node name="Grave9" parent="Graves" unique_id=1048509275 instance=ExtResource("8_g4wio")]
 position = Vector2(225, 68)
 
-[node name="Grave10" parent="Graves" instance=ExtResource("8_g4wio")]
+[node name="Grave10" parent="Graves" unique_id=2057081690 instance=ExtResource("8_g4wio")]
 position = Vector2(290, 136)
 
-[node name="Grave11" parent="Graves" instance=ExtResource("8_g4wio")]
+[node name="Grave11" parent="Graves" unique_id=1407374238 instance=ExtResource("8_g4wio")]
 position = Vector2(150, 105)
 
-[node name="DeathMask" parent="." instance=ExtResource("6_oodx8")]
+[node name="DeathMask" parent="." unique_id=452493808 instance=ExtResource("6_oodx8")]
 position = Vector2(283, 57)
 
-[node name="MaskCase" parent="." instance=ExtResource("9_g4wio")]
+[node name="MaskCase" parent="." unique_id=1171406916 instance=ExtResource("9_g4wio")]
 position = Vector2(284, 55)
 
-[node name="PaperTree" parent="." instance=ExtResource("2_7x0bf")]
+[node name="PaperTree" parent="." unique_id=489937890 instance=ExtResource("2_7x0bf")]
 position = Vector2(55, 67)
 
-[node name="PaperTree2" parent="." instance=ExtResource("2_7x0bf")]
+[node name="PaperTree2" parent="." unique_id=1416679898 instance=ExtResource("2_7x0bf")]
 position = Vector2(46, 124)
 
-[node name="PaperTree3" parent="." instance=ExtResource("2_7x0bf")]
+[node name="PaperTree3" parent="." unique_id=1709288343 instance=ExtResource("2_7x0bf")]
 position = Vector2(203, 59)
 
-[node name="PaperTree4" parent="." instance=ExtResource("2_7x0bf")]
+[node name="PaperTree4" parent="." unique_id=2068234436 instance=ExtResource("2_7x0bf")]
 position = Vector2(243, 117)
 
-[node name="PaperModal" parent="." instance=ExtResource("10_oodx8")]
+[node name="PaperModal" parent="." unique_id=1995830013 instance=ExtResource("10_oodx8")]
 visible = false
-z_index = 2
 offset_left = 157.0
 offset_top = 88.0
 offset_right = 157.0
 offset_bottom = 88.0
 
-[node name="Deco-tree" type="Sprite2D" parent="."]
+[node name="Deco-tree" type="Sprite2D" parent="." unique_id=1466244953]
 z_index = 1
 position = Vector2(85, 109)
 texture = ExtResource("3_7x0bf")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Deco-tree"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Deco-tree" unique_id=451051079]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Deco-tree/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Deco-tree/StaticBody2D" unique_id=1095911813]
 position = Vector2(-2, 19)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_oodx8")
 
-[node name="Deco-tree2" type="Sprite2D" parent="."]
+[node name="Deco-tree2" type="Sprite2D" parent="." unique_id=56104597]
 z_index = 1
 position = Vector2(210, 129)
 texture = ExtResource("3_7x0bf")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Deco-tree2"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Deco-tree2" unique_id=21489042]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Deco-tree2/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Deco-tree2/StaticBody2D" unique_id=1846060291]
 position = Vector2(-2, 18)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_oodx8")

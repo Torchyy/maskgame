@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://bt7uign0lyivm"]
+[gd_scene format=3 uid="uid://bt7uign0lyivm"]
 
-[ext_resource type="Script" uid="uid://c18jrbqpwtw15" path="res://modals/paper_modal.gd" id="1_ujtwk"]
+[ext_resource type="Script" path="res://modals/paper_modal.gd" id="1_ujtwk"]
 
-[node name="PaperModal" type="Control"]
+[node name="PaperModal" type="Control" unique_id=340863289]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,7 +11,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ujtwk")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1611902781]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -25,7 +25,7 @@ offset_bottom = 80.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect" type="ColorRect" parent="ColorRect"]
+[node name="ColorRect" type="ColorRect" parent="ColorRect" unique_id=1561627841]
 layout_mode = 0
 offset_left = 106.0
 offset_top = 3.0
@@ -33,7 +33,7 @@ offset_right = 117.0
 offset_bottom = 14.0
 color = Color(1, 0.120522, 0.204626, 1)
 
-[node name="Label" type="Label" parent="ColorRect"]
+[node name="Label" type="Label" parent="ColorRect" unique_id=712438546]
 layout_mode = 0
 offset_left = 5.0
 offset_top = 5.0
@@ -43,7 +43,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 10
 autowrap_mode = 2
 
-[node name="Button" type="Button" parent="ColorRect"]
+[node name="Button" type="Button" parent="ColorRect" unique_id=1337540945]
 z_index = -1
 layout_mode = 0
 offset_left = 108.0
